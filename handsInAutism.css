@@ -2,7 +2,6 @@
 	width: 100vw;
 	height: 5%;
 	font: 18px Arial, Helvetica, sans-serif;
-	border-bottom: thick solid black;
 }
 
 #title{
@@ -22,12 +21,26 @@ h1{
 	float: right;
 }
 
-#resource-title{
+.col-title{
 	text-align: center;
-	text-decoration: underline;
-	font: 24px Arial, Helvetica, sans-serif;
+	font: 26px Arial, Helvetica, sans-serif;
 }
-
+.side-col{
+	float: left;
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff9e5;
+}
+.mid-col{
+    border: 2px solid grey;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #fff9e5;
+}
+.container{
+    padding: 10px;
+}
 #how-to-holder{
 	display: flex;
 	flex-direction: column;
@@ -40,28 +53,6 @@ h1{
 	margin-top: 7px;
 }
 
-#resource-tab{
-	float: left;
-	margin-top: 10vh;
-}
-
-#container{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: flex-start;
-	border-bottom: thick solid black;
-	height: 300px;
-}
-
 #takeUpSpace{
 	height: 10vh;
-	border-bottom: thick solid black;
-}
-
-nav{
-	border-top: thin solid black;
-	border-right: thin solid black;
-	border-left: thin solid black;
-	border-bottom: thin solid black;
 }
