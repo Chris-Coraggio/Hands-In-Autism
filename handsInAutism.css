@@ -1,0 +1,58 @@
+#nav-bar{
+	width: 100vw;
+	height: 5%;
+	font: 18px Arial, Helvetica, sans-serif;
+}
+
+#title{
+	text-align: center;
+}
+
+h1{
+	font: 54px Arial, Helvetica, sans-serif;
+}
+
+#subtitle{
+	text-align: center;
+	font: 24px Arial, Helvetica, sans-serif;
+}
+
+#logo{
+	float: right;
+}
+
+.col-title{
+	text-align: center;
+	font: 26px Arial, Helvetica, sans-serif;
+}
+.side-col{
+	float: left;
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff9e5;
+}
+.mid-col{
+    border: 2px solid grey;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #fff9e5;
+}
+.container{
+    padding: 10px;
+}
+#how-to-holder{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: no-wrap;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#how-to-holder a{
+	margin-top: 7px;
+}
+
+#takeUpSpace{
+	height: 10vh;
+}
