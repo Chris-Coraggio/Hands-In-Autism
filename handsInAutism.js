@@ -14,7 +14,7 @@ function fillArea(link, language){
 
 	if(language == "english"){
 		if(link == "stoplight" || link == "countdown"){
-			var paragraph = $("#area").html("
+			var par = $("<div>").prop("id", "paragraph").html("
 			<p>
 				Stoplights and countdown boards are simple ways to help structure undefined periods of time (i.e., when it is unclear how long an activity will last).
 			</p>
@@ -55,7 +55,7 @@ function fillArea(link, language){
 			</ol>");
 		}
 		if(link == "choice-boards"){
-			var paragraph = $("#area").html("
+			var par = $("<div>").prop("id", "paragraph").html("
 				<p>
 				Making choices can be a difficult task for some individuals with Autism Spectrum Disorder
 				(ASD). Making a choice requires the individual to consider all possible appropriate options,
@@ -110,7 +110,7 @@ function fillArea(link, language){
 				");
 		}
 		if(link == "first-then"){
-			var paragraph = $("#area").html("
+			var par = $("<div>").prop("id", "paragraph").html("
 				<ol>
 					<li>
 						A first/then board is a specific strategy that shows what is expected of the individual
@@ -152,7 +152,7 @@ function fillArea(link, language){
 					</li>
 				</ol");
 		if(link == "pulley-cards"){
-			var paragraph = $("#area").html("
+			var par = $("<div>").prop("id", "paragraph").html("
 				<p>
 					Although it is helpful to keep a variety of pictures available for communication with
 					individuals with ASD, it can be difficult managing so many cards. By creating pulley
@@ -200,7 +200,7 @@ function fillArea(link, language){
 	}
 	if(language == "spanish"){
 		if(link == "stoplight" || link == "countdown"){
-			var paragraph = $("#area").html("
+			var par = $("<div>").prop("id", "paragraph").html("
 			<p>
 				Los tableros de semáforos y de conteo regresivo son maneras simples para ayudar a
 				estructurar periodos de tiempo indefinido (ej. cuando no es claro cuanto tiempo dure alguna
@@ -246,7 +246,7 @@ function fillArea(link, language){
 			</ol>");
 		}
 		if(link == "choice-boards"){
-			var paragraph = $("#area").html("
+			var par = $("<div>").prop("id", "paragraph").html("
 				<p>
 				Tomar decisiones puede ser una tarea difícil de realizar para personas dentro de los
 				trastornos del espectro autista (TEA). Tomar decisiones requiere que la persona considere
@@ -310,7 +310,7 @@ function fillArea(link, language){
 				");
 		}
 		if(link == "first-then"){
-			var paragraph = $("#area").html("
+			var par = $("<div>").prop("id", "paragraph").html("
 				<ol>
 					<li>
 						Esta estrategia desmuestra una expectación seguida por una actividad preferida (ej.
@@ -357,7 +357,7 @@ function fillArea(link, language){
 					</li>
 				</ol");
 		if(link == "pulley-cards"){
-			var paragraph = $("#area").html("
+			var par = $("<div>").prop("id", "paragraph").html("
 				<p>
 					Aunque ayuda mucho mantener disponible una variedad de fotos para comunicar con los con TEA, puede ser dif&iacutecil manejar tantas tarjetas.
 					Con tarjetas poleas, se puede tener unas tarjetas necesarias a su lado todo el tiempo.
