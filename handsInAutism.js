@@ -3,6 +3,7 @@ function fillArea(link, language){
 	/* 
 	links include:
 		stoplight
+		countdown
 		choice-boards
 		first-then
 		pulley-cards
@@ -12,7 +13,7 @@ function fillArea(link, language){
 	*/
 
 	if(language == "english"){
-		if(link == "stoplight"){
+		if(link == "stoplight" || link == "countdown"){
 			var paragraph = $("#area").html("
 			<p>
 				Stoplights and countdown boards are simple ways to help structure undefined periods of time (i.e., when it is unclear how long an activity will last).
@@ -198,7 +199,7 @@ function fillArea(link, language){
 		}
 	}
 	if(language == "spanish"){
-		if(link == "stoplight"){
+		if(link == "stoplight" || link == "countdown"){
 			var paragraph = $("#area").html("
 			<p>
 				Los tableros de semáforos y de conteo regresivo son maneras simples para ayudar a
@@ -404,8 +405,17 @@ function fillArea(link, language){
 			");
 		var belowVideo = $("#area").html("
 			<a href="How to Video _ Stop Light.wmv">Download Stop Light</a>
+		");
+	}
+	if(link == "countdown"){
+		var video = $("#video").html("
+			<video>
+  				<source src="How to Video _ Count Down Board.wmv" type="video/wmv">
+  				Your browser does not support HTML5 video.
+			</video>
+			");
+		var belowVideo = $("#area").html("
 			<a href="How to video _ Count Down Board.wmv">Download Count Down</a>
-			<button onclick="changeVideo()">Show Count Down</button>
 		");
 	}
 	if(link == "choice-boards"){
@@ -442,20 +452,6 @@ function fillArea(link, language){
 			");
 	}
 	//paragraph.appendTo($(#theDiv));
-	function changeVideo(){
-        var elem = document.getElementById("button");
-        if(elem.value == "Show Count Down"){
-            elem.value = "Show Stop Light";
-            $("#video").html("
-            	<video>
-  				<source src="How to video _ Count Down Board.wmv" type="video/wmv">
-  				Your browser does not support HTML5 video.
-				</video>
-			");
-        }else{
-            elem.value = "Show Count Down";
-        }
-    };
 	}
 	}
 }
