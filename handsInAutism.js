@@ -7,14 +7,25 @@ function fillArea(link, language){
 		choice-boards
 		first-then
 		pulley-cards
+		main
 	languages include:
 		english
 		spanish
 	*/
 
+	/* adds to:
+	title
+	video
+	belowVideo
+	paragraph
+	*/
+
+	console.log("Yo! I made it!")
+	var theTitle, vid, belowVideo, par;
+
 	if(language == "english"){
 		if(link == "stoplight" || link == "countdown"){
-			var par = $("<div>").prop("id", "paragraph").html("
+			$("#paragraph").html("
 			<p>
 				Stoplights and countdown boards are simple ways to help structure undefined periods of time (i.e., when it is unclear how long an activity will last).
 			</p>
@@ -53,9 +64,18 @@ function fillArea(link, language){
 				Place a strip on the back to hold extra pieces.
 				</li>
 			</ol>");
+		if(link == "stoplight"){
+			belowVideo = $("<div>").prop("id", "belowVideo").html("
+				<a href="How to Video _ Stop Light.wmv">Download</a>
+			");
+			theTitle = $("<div>").prop("id", "title").html("
+				<h1> Stoplight </h1>
+			");
+		}else{
+
 		}
 		if(link == "choice-boards"){
-			var par = $("<div>").prop("id", "paragraph").html("
+			par = $("<div>").prop("id", "paragraph").html("
 				<p>
 				Making choices can be a difficult task for some individuals with Autism Spectrum Disorder
 				(ASD). Making a choice requires the individual to consider all possible appropriate options,
@@ -110,7 +130,7 @@ function fillArea(link, language){
 				");
 		}
 		if(link == "first-then"){
-			var par = $("<div>").prop("id", "paragraph").html("
+			par = $("<div>").prop("id", "paragraph").html("
 				<ol>
 					<li>
 						A first/then board is a specific strategy that shows what is expected of the individual
@@ -152,7 +172,7 @@ function fillArea(link, language){
 					</li>
 				</ol");
 		if(link == "pulley-cards"){
-			var par = $("<div>").prop("id", "paragraph").html("
+			par = $("<div>").prop("id", "paragraph").html("
 				<p>
 					Although it is helpful to keep a variety of pictures available for communication with
 					individuals with ASD, it can be difficult managing so many cards. By creating pulley
@@ -200,7 +220,7 @@ function fillArea(link, language){
 	}
 	if(language == "spanish"){
 		if(link == "stoplight" || link == "countdown"){
-			var par = $("<div>").prop("id", "paragraph").html("
+			par = $("<div>").prop("id", "paragraph").html("
 			<p>
 				Los tableros de semáforos y de conteo regresivo son maneras simples para ayudar a
 				estructurar periodos de tiempo indefinido (ej. cuando no es claro cuanto tiempo dure alguna
@@ -246,7 +266,7 @@ function fillArea(link, language){
 			</ol>");
 		}
 		if(link == "choice-boards"){
-			var par = $("<div>").prop("id", "paragraph").html("
+			par = $("<div>").prop("id", "paragraph").html("
 				<p>
 				Tomar decisiones puede ser una tarea difícil de realizar para personas dentro de los
 				trastornos del espectro autista (TEA). Tomar decisiones requiere que la persona considere
@@ -310,7 +330,7 @@ function fillArea(link, language){
 				");
 		}
 		if(link == "first-then"){
-			var par = $("<div>").prop("id", "paragraph").html("
+			par = $("<div>").prop("id", "paragraph").html("
 				<ol>
 					<li>
 						Esta estrategia desmuestra una expectación seguida por una actividad preferida (ej.
@@ -357,7 +377,7 @@ function fillArea(link, language){
 					</li>
 				</ol");
 		if(link == "pulley-cards"){
-			var par = $("<div>").prop("id", "paragraph").html("
+			par = $("<div>").prop("id", "paragraph").html("
 				<p>
 					Aunque ayuda mucho mantener disponible una variedad de fotos para comunicar con los con TEA, puede ser dif&iacutecil manejar tantas tarjetas.
 					Con tarjetas poleas, se puede tener unas tarjetas necesarias a su lado todo el tiempo.
@@ -397,61 +417,72 @@ function fillArea(link, language){
 		}
 	}
 	if(link == "stoplight"){
-		var video = $("#video").html("
+		vid = $("<div>").prop("id", "video").html("
 			<video>
   				<source src="How to Video _ Stop Light.wmv" type="video/wmv">
   				Your browser does not support HTML5 video.
 			</video>
 			");
-		var belowVideo = $("#area").html("
-			<a href="How to Video _ Stop Light.wmv">Download Stop Light</a>
-		");
+		
 	}
 	if(link == "countdown"){
-		var video = $("#video").html("
+		vid = $("<div>").prop("id", "video").html("
 			<video>
   				<source src="How to Video _ Count Down Board.wmv" type="video/wmv">
   				Your browser does not support HTML5 video.
 			</video>
 			");
-		var belowVideo = $("#area").html("
-			<a href="How to video _ Count Down Board.wmv">Download Count Down</a>
+		belowVideo = $("<div>").prop("id", "belowVideo").html("
+			<a href="How to video _ Count Down Board.wmv">Download</a>
 		");
+		theTitle = $("<div>").prop("id", "title").html("
+			<h1> Countdown </h1>
+			");
 	}
 	if(link == "choice-boards"){
-		var video = $("#video").html("
+		vid = $("<div>").prop("id", "video").html("
 			<video>
   				<source src="How to Video _ Choice Board.wmv" type="video/wmv">
   				Your browser does not support HTML5 video.
 			</video>
 			");
-		var belowVideo = $("#area").html("
-			<a href="How to Video _ Choice Board.wmv">Download Choice Board</a>
+		belowVideo = $("<div>").prop("id", "belowVideo").html("
+			<a href="How to Video _ Choice Board.wmv">Download</a>
+			");
+		theTitle = $("<div>").prop("id", "title").html("
+			<h1> Choice Boards </h1>
 			");
 	}
 	if(link == "first-then"){
-		var video = $("#video").html("
+		vid = $("<div>").prop("id", "video").html("
 			<video>
   				<source src="How to Video _ First Then.wmv" type="video/wmv">
   				Your browser does not support HTML5 video.
 			</video>
 			");
-		var belowVideo = $("#area").html("
-			<a href="How to Video _ First Then.wmv">Download First Then</a>
+		belowVideo = $("<div>").prop("id", "belowVideo").html("
+			<a href="How to Video _ First Then.wmv">Download</a>
+			");
+		theTitle = $("<div>").prop("id", "title").html("
+			<h1> First Then </h1>
 			");
 	}
 	if(link == "pulley-cards"){
-		var video = $("#video").html("
+		vid = $("<div>").prop("id", "video").html("
 			<video>
   				<source src="How to Video _ Pulley Card.wmv" type="video/wmv">
   				Your browser does not support HTML5 video.
 			</video>
 			");
-		var belowVideo = $("#area").html("
-			<a href="How to Video _ Pulley Card.wmv">Download Pulley Card</a>
+		belowVideo = $("<div>").prop("id", "belowVideo").html("
+			<a href="How to Video _ Pulley Card.wmv">Download</a>
+			");
+		theTitle = $("<div>").prop("id", "title").html("
+			<h1> Pulley Cards </h1>
 			");
 	}
-	//paragraph.appendTo($(#theDiv));
-	}
-	}
+	$("#paragraph").append(par);
+	$("#video").append(vid);
+	$("#belowVideo").append(belowVideo);
+	$("#title").append(theTitle);
 }

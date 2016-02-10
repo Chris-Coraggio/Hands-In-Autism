@@ -5,12 +5,13 @@
     <link rel="stylesheet" href="handsInAutism.css">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap.min.css.map">
+    <script src="handsInAutism.js"</script>
 </head>
 <body style="background-color: #d8e4f3">
     <div class="container">
         <div id="head" class="row">
             <div class="col-sm-3">
-                <div class="lang">English</div>
+                <a><div class="lang">English</div></a>
 				<a href="indexEspanol.html"><div class="lang">Espa&ntilde;ol</div></a>
             </div>
             <div id="title" class="col-sm-6">
@@ -24,12 +25,12 @@
         <div class="row" class="content">
 			
             <div class="side-col col-sm-2">
-                <a class="col-link" href="stoplight.html">Stoplight</a>
-                <a class="col-link" href="stoplight.html">Countdown</a>
-				<a class="col-link" href="firstThen.html">First Then</a>
-				<a class="col-link" href="pulleyCards.html">Pulley Cards</a>
-				<a class="col-link" href="choiceBoards.html">Choice Boards</a>
-				<a class="col-link" href="index.html">Main Page</a>
+                <a class="col-link" onclick="fillArea('stoplight', 'english');">Stoplight</a>
+                <a class="col-link" onclick="fillArea('countdown', 'english');">Countdown</a>
+				<a class="col-link" onclick="fillArea('first-then', 'english');">First Then</a>
+				<a class="col-link" onclick="fillArea('pulley-cards', 'english');">Pulley Cards</a>
+				<a class="col-link" onclick="fillArea('choice-boards', 'english');">Choice Boards</a>
+				<a class="col-link" onclick="fillArea('main', 'english');">Main Page</a>
 				<div id="contact">Contact Us!</div>
 				<div class="social">
 					<center>
@@ -45,10 +46,13 @@
             <div class="col-sm-10 mid-col">
 				<div class="content"><!--One of the "tabs-->
 					<center>
-						<h1>How to Stoplight</h1>
+						<div id="title"><h1>What is Autism?</h1></div>
 						<div class="link">DO IT!!!</div>
 						<div id="video" style="width: 500px; height: 300px; text-align: center; vertical-align: center;background-color: lime;">
 							<!-- Video Goes here -->
+						</div>
+						<div id="belowVideo">
+							<!-- download button goes here -->
 						</div>
 						<div id="paragraph">
 							<!-- Explanatory text goes here -->
