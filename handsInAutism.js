@@ -54,7 +54,7 @@ function fillArea(link, language){
 			</ol>");
 		}
 		if(link == "choice-boards"){
-			var paragraph = $("#area")html("
+			var paragraph = $("#area").html("
 				<p>
 				Making choices can be a difficult task for some individuals with Autism Spectrum Disorder
 				(ASD). Making a choice requires the individual to consider all possible appropriate options,
@@ -109,7 +109,7 @@ function fillArea(link, language){
 				");
 		}
 		if(link == "first-then"){
-			var paragraph = $("#area")html("
+			var paragraph = $("#area").html("
 				<ol>
 					<li>
 						A first/then board is a specific strategy that shows what is expected of the individual
@@ -151,7 +151,7 @@ function fillArea(link, language){
 					</li>
 				</ol");
 		if(link == "pulley-cards"){
-			var paragraph = $("#area")html("
+			var paragraph = $("#area").html("
 				<p>
 					Although it is helpful to keep a variety of pictures available for communication with
 					individuals with ASD, it can be difficult managing so many cards. By creating pulley
@@ -245,7 +245,7 @@ function fillArea(link, language){
 			</ol>");
 		}
 		if(link == "choice-boards"){
-			var paragraph = $("#area")html("
+			var paragraph = $("#area").html("
 				<p>
 				Tomar decisiones puede ser una tarea difícil de realizar para personas dentro de los
 				trastornos del espectro autista (TEA). Tomar decisiones requiere que la persona considere
@@ -309,7 +309,7 @@ function fillArea(link, language){
 				");
 		}
 		if(link == "first-then"){
-			var paragraph = $("#area")html("
+			var paragraph = $("#area").html("
 				<ol>
 					<li>
 						Esta estrategia desmuestra una expectación seguida por una actividad preferida (ej.
@@ -356,7 +356,7 @@ function fillArea(link, language){
 					</li>
 				</ol");
 		if(link == "pulley-cards"){
-			var paragraph = $("#area")html("
+			var paragraph = $("#area").html("
 				<p>
 					Aunque ayuda mucho mantener disponible una variedad de fotos para comunicar con los con TEA, puede ser dif&iacutecil manejar tantas tarjetas.
 					Con tarjetas poleas, se puede tener unas tarjetas necesarias a su lado todo el tiempo.
@@ -395,6 +395,67 @@ function fillArea(link, language){
 				</ol>");
 		}
 	}
-	//paragraph.appendTo(#theDiv);
+	if(link == "stoplight"){
+		var video = $("#video").html("
+			<video>
+  				<source src="How to Video _ Stop Light.wmv" type="video/wmv">
+  				Your browser does not support HTML5 video.
+			</video>
+			");
+		var belowVideo = $("#area").html("
+			<a href="How to Video _ Stop Light.wmv">Download Stop Light</a>
+			<a href="How to video _ Count Down Board.wmv">Download Count Down</a>
+			<button onclick="changeVideo()">Show Count Down</button>
+		");
+	}
+	if(link == "choice-boards"){
+		var video = $("#video").html("
+			<video>
+  				<source src="How to Video _ Choice Board.wmv" type="video/wmv">
+  				Your browser does not support HTML5 video.
+			</video>
+			");
+		var belowVideo = $("#area").html("
+			<a href="How to Video _ Choice Board.wmv">Download Choice Board</a>
+			");
+	}
+	if(link == "first-then"){
+		var video = $("#video").html("
+			<video>
+  				<source src="How to Video _ First Then.wmv" type="video/wmv">
+  				Your browser does not support HTML5 video.
+			</video>
+			");
+		var belowVideo = $("#area").html("
+			<a href="How to Video _ First Then.wmv">Download First Then</a>
+			");
+	}
+	if(link == "pulley-cards"){
+		var video = $("#video").html("
+			<video>
+  				<source src="How to Video _ Pulley Card.wmv" type="video/wmv">
+  				Your browser does not support HTML5 video.
+			</video>
+			");
+		var belowVideo = $("#area").html("
+			<a href="How to Video _ Pulley Card.wmv">Download Pulley Card</a>
+			");
+	}
+	//paragraph.appendTo($(#theDiv));
+	function changeVideo(){
+        var elem = document.getElementById("button");
+        if(elem.value == "Show Count Down"){
+            elem.value = "Show Stop Light";
+            $("#video").html("
+            	<video>
+  				<source src="How to video _ Count Down Board.wmv" type="video/wmv">
+  				Your browser does not support HTML5 video.
+				</video>
+			");
+        }else{
+            elem.value = "Show Count Down";
+        }
+    };
+	}
 	}
 }
