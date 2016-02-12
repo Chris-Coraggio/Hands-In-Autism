@@ -237,6 +237,13 @@ function fillArea(link, language){
 						Wear the pulley cards so they are accessible whenever needed. \
 					</li>");
 		}
+		if(link == "main"){
+			$("#paragraph").html("");
+			$("#title").html("What is autism?");
+			$("#link").html("");
+			$("#video").html("");
+			$("belowVideo").html("");
+		}
 	}
 	if(language == "spanish"){
 		if(link == "stoplight" || link == "countdown"){
@@ -435,6 +442,7 @@ function fillArea(link, language){
 					</li> \
 				</ol>");
 		}
+	}
 	if(link == "stoplight"){
 		$("#svideo").html(" \
 			<video controls> \
@@ -499,3 +507,4 @@ function fillArea(link, language){
 			<h1> Pulley Cards </h1> \
 			");
 	}
+}
