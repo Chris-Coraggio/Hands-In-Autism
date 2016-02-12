@@ -37,6 +37,7 @@
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	background-color: white;
 }
 .content{
 	margin-left: 30px;
@@ -52,18 +53,30 @@
 	text-align: center;
 }
 .side-col{
-	background-color: white;
+	background-color: #3fb0ac;
 	border-right: 2px solid grey;
 	border-top: 2px solid grey;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	margin-bottom: 15px;
 }
 .mid-col{
 	background-color: white;
 	border-top: 2px solid grey;
 	padding-left: 50px;
 	padding-right: 50px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	margin-bottom: 15px;
+}
+.row{
+	display: flex;
+}
+#theTitle{
+	text-align: center;
 }
 #head{
-	background-color: #003399;
+	background-color: #114356;
 	color: white;
 	padding: 10px;
 	padding-top: 0px;
