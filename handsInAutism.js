@@ -56,7 +56,7 @@ function fillArea(link, language){
 					As time passes, the adult removes the numbers from the countdown board (one at a time) until the final card is removed and the activity is over. With stoplights, the adult places then \
 					</li> \
 				</ul> \
-				<h2>To Make:<h2> \
+				<h2>To Make:</h2> \
 				<ol type='1'> \
 					<li> \
 					Cut out the pictures and numbers available here (or draw your own) then laminate or cover with clear contact paper. \
@@ -128,7 +128,7 @@ function fillArea(link, language){
 					</li> \
 				</ol> \
  \
-				<p><h2><To Use:</h2></p> \
+				<p><h2>To Use:</h2></p> \
 				<ol type='1'> \
 					<li> \
 						When it is time for the individual to make a choice, present him or her with the choice \
@@ -221,7 +221,7 @@ function fillArea(link, language){
 					serve as a cues as to which specific options exist (i.e. &quot;yes, you can do that,&quot; or &quot;no, you \
 					cannot&quot;). Additional options for cards are included. \
 				</p> \
-				<h2>To Make:<h2> \
+				<h2>To Make:</h2> \
 				<ol type='1'> \
 					<li> \
 						Take photographs or cut out the images available here to represent appropriate \
@@ -271,7 +271,7 @@ function fillArea(link, language){
 				ultima tarjeta y la actividad haya terminado. \
 				</li> \
 			</ul> \
-			<h2>Para Hacer:<h2> \
+			<h2>Para Hacer:</h2> \
 			<ol type='1'> \
 				<li> \
 				Corte las tarjetas de abajo (o dibuje las suyas), laminarlas si es posible				</li> \
