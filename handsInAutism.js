@@ -79,7 +79,7 @@ function fillArea(link, language){
 			</ol>");
 		if(link == "stoplight"){
 			$("#belowVideo").html(" \
-				<a href='How to Video _ Stop Light.wmv'>Download this Video</a> \
+				<a href='How_to_Video_Stop_Light.mp4'>Download this Video</a> \
 			");
 			$("#title").html(" \
 				Stoplight \
@@ -436,7 +436,7 @@ function fillArea(link, language){
 	if(link == "stoplight"){
 		$("#svideo").html(" \
 			<video> \
-  				<source src='How_to_Video_Stop_Light.mp4' type='video/wmv'> \
+  				<source src='How_to_Video_Stop_Light.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");
@@ -447,7 +447,7 @@ function fillArea(link, language){
 	if(link == "countdown"){
 		$("#video").html(" \
 			<video> \
-  				<source src='How_to_Video_Count_Down.mp4' type='video/wmv'> \
+  				<source src='How_to_Video_Count_Down.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");
@@ -458,7 +458,7 @@ function fillArea(link, language){
 	if(link == "choice-boards"){
 		$("#video").html(" \
 			<video> \
-  				<source src='How_to_Video_Choice_Boards.mp4' type='video/wmv'> \
+  				<source src='How_to_Video_Choice_Boards.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");
@@ -472,7 +472,7 @@ function fillArea(link, language){
 	if(link == "first-then"){
 		$("#video").html(" \
 			<video> \
-  				<source src='How_to_Video_First_Then.mp4' type='video/wmv'> \
+  				<source src='How_to_Video_First_Then.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");
@@ -486,7 +486,7 @@ function fillArea(link, language){
 	if(link == "pulley-cards"){
 		$("#video").html(" \
 			<video> \
-  				<source src='How_to_Video_Pulley_Card.mp4' type='video/wmv'> \
+  				<source src='How_to_Video_Pulley_Card.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");
