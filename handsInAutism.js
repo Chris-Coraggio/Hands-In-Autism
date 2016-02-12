@@ -109,6 +109,9 @@ function fillArea(link, language){
 			$(".col-link").css("border-width", "2px");
 			$("#choice-boards").css("border-color", "#114356");
 			$("#choice-boards").css("border-width", "3px");
+			$("#title").html(" \
+					Choice Boards \
+			");
 			$("#paragraph").html(" \
 				<p> \
 				Making choices can be a difficult task for some individuals with Autism Spectrum Disorder \
@@ -168,8 +171,11 @@ function fillArea(link, language){
 			$(".col-link").css("border-width", "2px");
 			$("#first-then").css("border-color", "#114356");
 			$("#first-then").css("border-width", "3px");
+			$("#title").html(" \
+					First Then \
+			");
 			$("#paragraph").html(" \
-				<ol> \
+				<ul> \
 					<li> \
 						A first/then board is a specific strategy that shows what is expected of the individual \
 						through the use of a picture of the first activity followed by a picture of the following \
@@ -189,7 +195,7 @@ function fillArea(link, language){
 						Remember, offer rewards prior to negative behavior so the individual does not learn to \
 						misbehave in order to have a reward offered. \
 					</li> \
-				<ol> \
+				</ul> \
 				<h2>To Make:</h2> \
 				<ol type='1'> \
 					<li> \
@@ -215,6 +221,9 @@ function fillArea(link, language){
 			$(".col-link").css("border-width", "2px");
 			$("#pulley-cards").css("border-color", "#114356");
 			$("#pulley-cards").css("border-width", "3px");
+			$("#title").html(" \
+					Pulley Cards \
+			");
 			$("#paragraph").html(" \
 				<p> \
 					Although it is helpful to keep a variety of pictures available for communication with \
@@ -512,9 +521,6 @@ function fillArea(link, language){
 		$("#belowVideo").html(" \
 			<a href='How_to_Video_Choice_Boards.mp4'>Download</a> \
 			");
-		$("#title").html(" \
-			<h1> Choice Boards </h1> \
-			");
 	}
 	if(link == "first-then"){
 		$("#video").html(" \
@@ -526,9 +532,6 @@ function fillArea(link, language){
 		$("#belowVideo").html(" \
 			<a href='How_to_Video_First_Then.mp4'>Download</a> \
 			");
-		$("#title").html(" \
-			<h1> First Then </h1> \
-			");
 	}
 	if(link == "pulley-cards"){
 		$("#video").html(" \
@@ -539,9 +542,6 @@ function fillArea(link, language){
 			");
 		$("#belowVideo").html(" \
 			<a href='How_to_Video_Pulley_Card.mp4'>Download</a> \
-			");
-		$("#title").html(" \
-			<h1> Pulley Cards </h1> \
 			");
 	}
 }
