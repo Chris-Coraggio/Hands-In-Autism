@@ -38,6 +38,17 @@ function fillArea(link, language){
 
 	if(language == "english"){
 		if(link == "stoplight" || link == "countdown"){
+			if(link == "stoplight"){
+				$(".col-link").css("border-color", "grey");
+				$(".col-link").css("border-width", "2px");
+				$("#stoplight").css("border-color", "#114356");
+				$("#stoplight").css("border-width", "3px");
+			}else if(link == "countdown"){
+				$(".col-link").css("border-color", "grey");
+				$(".col-link").css("border-width", "2px");
+				$("#countdown").css("border-color", "#114356");
+				$("#countdown").css("border-width", "3px");
+			}
 				$("#paragraph").html(
 				"<p> \
 					Stoplights and countdown boards are simple ways to help structure undefined periods of time (i.e., when it is unclear how long an activity will last). \
@@ -94,6 +105,10 @@ function fillArea(link, language){
 			}
 		}
 		if(link == "choice-boards"){
+			$(".col-link").css("border-color", "grey");
+			$(".col-link").css("border-width", "2px");
+			$("#choice-boards").css("border-color", "#114356");
+			$("#choice-boards").css("border-width", "3px");
 			$("#paragraph").html(" \
 				<p> \
 				Making choices can be a difficult task for some individuals with Autism Spectrum Disorder \
@@ -149,6 +164,10 @@ function fillArea(link, language){
 				");
 		}
 		if(link == "first-then"){
+			$(".col-link").css("border-color", "grey");
+			$(".col-link").css("border-width", "2px");
+			$("#first-then").css("border-color", "#114356");
+			$("#first-then").css("border-width", "3px");
 			$("#paragraph").html(" \
 				<ol> \
 					<li> \
@@ -192,6 +211,10 @@ function fillArea(link, language){
 				</ol");
 		}
 		if(link == "pulley-cards"){
+			$(".col-link").css("border-color", "grey");
+			$(".col-link").css("border-width", "2px");
+			$("#pulley-cards").css("border-color", "#114356");
+			$("#pulley-cards").css("border-width", "3px");
 			$("#paragraph").html(" \
 				<p> \
 					Although it is helpful to keep a variety of pictures available for communication with \
@@ -239,10 +262,17 @@ function fillArea(link, language){
 		}
 		if(link == "main"){
 			$("#paragraph").html("");
-			$("#title").html("What is autism?");
+			$("#title").html("What is Autism?");
 			$("#link").html("");
 			$("#video").html("");
 			$("belowVideo").html("");
+			$(".col-link").css("border-color", "grey");
+			$(".col-link").css("border-width", "2px");
+			$("#main").css("border-color", "#114356");
+			$("#main").css("border-width", "3px");
+		}else if(link != "main"){
+			$("#main").css("border-color", "grey");
+			$("#main").css("border-width", "2px");
 		}
 	}
 	if(language == "spanish"){
