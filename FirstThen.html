@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"></link>
+    <link rel="stylesheet" href="CSS/DragDrop.css"></link>
+    <link rel="stylesheet" href="bootstrap.min.css"></link>
+    <link rel="stylesheet" href="bootstrap.min.css.map"></link>
+    
+    <script src="JS/DragDrop.js"> </script> 
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+</head>
+
+<body>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-6">
+        <label> <b> First: </b> </label>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="col-md-6">
+        <label> <b> Then: </b> </label>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+    </div>
+    <div class="row" id="row1">
+      <img id="pic1" src="icons/break time.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic2" src="icons/brush hair.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic3" src="icons/brush teeth.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic4" src="icons/clean.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic5" src="icons/come here.png" draggable="true" ondragstart="drag(event)">
+    </div>
+    <div class="row">
+      <img id="pic6" src="icons/eat.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic7" src="icons/finished.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic8" src="icons/get dressed.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic9" src="icons/look at me.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic10" src="icons/listen to music.png" draggable="true" ondragstart="drag(event)">
+    </div>
+    <div class="row">
+      <img id="pic11" src="icons/please wait.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic12" src="icons/read.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic13" src="icons/walk.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic14" src="icons/watch tv.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic15" src="icons/listen to music.png" draggable="true" ondragstart="drag(event)">
+    </div>
+    <div class="row">
+      <img id="pic16" src="icons/game.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic17" src="icons/homework.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic18" src="icons/bathroom.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic19" src="icons/puzzle.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic20" src="icons/play.png" draggable="true" ondragstart="drag(event)">
+    </div>
+    <div class="row">
+      <img id="pic21" src="icons/doctor.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic22" src="icons/sports.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic23" src="icons/time to work.png" draggable="true" ondragstart="drag(event)">
+      <img id="pic24" src="icons/trains.png" draggable="true" ondragstart="drag(event)">
+    </div>
+  </div>
+</body>
+</html>
