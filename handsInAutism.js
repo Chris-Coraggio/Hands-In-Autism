@@ -38,59 +38,60 @@ function fillArea(link, language){
 
 	if(language == "english"){
 		if(link == "stoplight" || link == "countdown"){
-			$("#paragraph").html(
-			"<p> \
-				Stoplights and countdown boards are simple ways to help structure undefined periods of time (i.e., when it is unclear how long an activity will last). \
-			</p> \
-			<ul> \
-				<li> \
-				One good time for using these boards is when waiting in a waiting room or when waiting for a bus. \
-				</li> \
-				<li> \
-				On a stoplight, red, yellow and green cards indicate time passing, whereas on a countdown board, numbers 1-5 indicate time passing. \
-				</li> \
-				<li> \
-				With both stoplights and countdown boards, the adult manipulates the board, reflecting the passage of time. \
-				</li> \
-				<li> \
-				As time passes, the adult removes the numbers from the countdown board (one at a time) until the final card is removed and the activity is over. With stoplights, the adult places then \
-				</li> \
-			</ul> \
-			<h2>To Make:<h2> \
-			<ol type='1'> \
-				<li> \
-				Cut out the pictures and numbers available here (or draw your own) then laminate or cover with clear contact paper. \
-				</li> \
-				<li> \
-				Attach a piece of Velcro to the back of each picture or number. \
-				</li> \
-				<li> \
-				Cut a piece of poster board so it is slightly bigger than the pictures (see images above). \
-				</li> \
-				<li> \
-				Place Velcro on the poster board in a vertical column. \
-				</li> \
-				<li> \
-				Place pictures on poster board in the order shown in the images. \
-				</li> \
-				<li> \
-				Place a strip on the back to hold extra pieces. \
-				</li> \
-			</ol>");
-		if(link == "stoplight"){
-			$("#belowVideo").html(" \
-				<a href='How_to_Video_Stop_Light.mp4'>Download this Video</a> \
-			");
-			$("#title").html(" \
-				Stoplight \
-			");
-		}else{
-			$("#belowVideo").html(" \
-				<a href='How_to_Video_Count_Down.mp4'>Download this Video</a> \
-			");
-			$("#title").html(" \
-				Countdown \
-			");
+				$("#paragraph").html(
+				"<p> \
+					Stoplights and countdown boards are simple ways to help structure undefined periods of time (i.e., when it is unclear how long an activity will last). \
+				</p> \
+				<ul> \
+					<li> \
+					One good time for using these boards is when waiting in a waiting room or when waiting for a bus. \
+					</li> \
+					<li> \
+					On a stoplight, red, yellow and green cards indicate time passing, whereas on a countdown board, numbers 1-5 indicate time passing. \
+					</li> \
+					<li> \
+					With both stoplights and countdown boards, the adult manipulates the board, reflecting the passage of time. \
+					</li> \
+					<li> \
+					As time passes, the adult removes the numbers from the countdown board (one at a time) until the final card is removed and the activity is over. With stoplights, the adult places then \
+					</li> \
+				</ul> \
+				<h2>To Make:<h2> \
+				<ol type='1'> \
+					<li> \
+					Cut out the pictures and numbers available here (or draw your own) then laminate or cover with clear contact paper. \
+					</li> \
+					<li> \
+					Attach a piece of Velcro to the back of each picture or number. \
+					</li> \
+					<li> \
+					Cut a piece of poster board so it is slightly bigger than the pictures (see images above). \
+					</li> \
+					<li> \
+					Place Velcro on the poster board in a vertical column. \
+					</li> \
+					<li> \
+					Place pictures on poster board in the order shown in the images. \
+					</li> \
+					<li> \
+					Place a strip on the back to hold extra pieces. \
+					</li> \
+				</ol>");
+			if(link == "stoplight"){
+				$("#belowVideo").html(" \
+					<a href='How_to_Video_Stop_Light.mp4'>Download this Video</a> \
+				");
+				$("#title").html(" \
+					Stoplight \
+				");
+			}else{
+				$("#belowVideo").html(" \
+					<a href='How_to_Video_Count_Down.mp4'>Download this Video</a> \
+				");
+				$("#title").html(" \
+					Countdown \
+				");
+			}
 		}
 		if(link == "choice-boards"){
 			$("#paragraph").html(" \
@@ -189,6 +190,7 @@ function fillArea(link, language){
 						Use Velcro to attach pictures on First-Then board in the order shown in the image. \
 					</li> \
 				</ol");
+		}
 		if(link == "pulley-cards"){
 			$("#paragraph").html(" \
 				<p> \
@@ -393,6 +395,7 @@ function fillArea(link, language){
 						muestra abajo). \
 					</li> \
 				</ol");
+		}
 		if(link == "pulley-cards"){
 			$("#paragraph").html(" \
 				<p> \
@@ -432,10 +435,9 @@ function fillArea(link, language){
 					</li> \
 				</ol>");
 		}
-	}
 	if(link == "stoplight"){
 		$("#svideo").html(" \
-			<video> \
+			<video controls> \
   				<source src='How_to_Video_Stop_Light.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
@@ -446,7 +448,7 @@ function fillArea(link, language){
 	}
 	if(link == "countdown"){
 		$("#video").html(" \
-			<video> \
+			<video controls> \
   				<source src='How_to_Video_Count_Down.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
@@ -457,7 +459,7 @@ function fillArea(link, language){
 	}
 	if(link == "choice-boards"){
 		$("#video").html(" \
-			<video> \
+			<video controls> \
   				<source src='How_to_Video_Choice_Boards.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
@@ -471,7 +473,7 @@ function fillArea(link, language){
 	}
 	if(link == "first-then"){
 		$("#video").html(" \
-			<video> \
+			<video controls> \
   				<source src='How_to_Video_First_Then.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
@@ -485,7 +487,7 @@ function fillArea(link, language){
 	}
 	if(link == "pulley-cards"){
 		$("#video").html(" \
-			<video> \
+			<video controls> \
   				<source src='How_to_Video_Pulley_Card.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
@@ -497,7 +499,3 @@ function fillArea(link, language){
 			<h1> Pulley Cards </h1> \
 			");
 	}
-}
-}
-}
-}
