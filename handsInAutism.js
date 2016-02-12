@@ -174,9 +174,9 @@ function fillArea(link, language){
 						A first/then board is a specific strategy that shows what is expected of the individual \
 						through the use of a picture of the first activity followed by a picture of the following \
 						activity. The &quot;first&quot; activity is usually a less desired activity and the “then” activity is a \
-						more preferred activity, such as  “choice time”, “break time”, a specific activity (e.g., \
+						more preferred activity, such as  &quot;choice time&quot;, &quot;break time&quot;, a specific activity (e.g., \
 						game), or an object (e.g., book). It is okay to place a concrete object (such as a book) on \
-						the “Then” box if no pictures are available. \
+						the &quot;Then&quot; box if no pictures are available. \
 					</li> \
 					<li> \
 						Try using first-then boards to help individuals through non-preferred tasks (e.g., home- \
@@ -193,17 +193,17 @@ function fillArea(link, language){
 				<h2>To Make:</h2> \
 				<ol type='1'> \
 					<li> \
-						Take photographs or cut out the images available here to represent the “first” task. \
+						Take photographs or cut out the images available here to represent the &quot;first&quot; task. \
 						Text could alternatively be used if appropriate for the individual. Laminate the pic- \
 						tures/text if possible or cover with clear contact paper. \
 					</li> \
 					<li> \
 						Think about possible rewards. Use photographs, text, objects, or the attached images \
-						to represent the “then”.  Laminate if possible or cover with contact paper. \
+						to represent the &quot;then&quot;.  Laminate if possible or cover with contact paper. \
 					</li> \
 					<li> \
 						Use the First-Then board included here, or draw and cut out two large squares, one \
-						with “First” above it, and one with “Then” above it. \
+						with &quot;First&quot; above it, and one with &quot;Then&quot; above it. \
 					</li> \
 					<li> \
 						Use Velcro to attach pictures on First-Then board in the order shown in the image. \
@@ -226,11 +226,11 @@ function fillArea(link, language){
 					support person. \
 				</p> \
 				<p> \
-					One common card to include is a “please wait” card. Often, individuals with ASD have a \
+					One common card to include is a &quot;please wait&quot; card. Often, individuals with ASD have a \
 					tendency to engage in maladaptive behaviors to gain the attention of their caretakers. \
 					&quot;Please wait&quot; cards can be used to prevent disruptive behaviors. Once it is recognized \
 					that the individual is displaying signs of becoming agitated, the support person can \
-					select the &quot;please wait” card from the pulley, put it in the line of vision of the individual, \
+					select the &quot;please wait&quot; card from the pulley, put it in the line of vision of the individual, \
 					and point to it. In addition, when the individual is waiting appropriately, verbal praise \
 					such as, “good job waiting” should be provided. Such praise should be given every few \
 					minutes to encourage the individual to continue displaying appropriate behavior. It may \
@@ -471,6 +471,13 @@ function fillArea(link, language){
 						Lleve las tarjetas poleas para que sean accesibles \
 					</li> \
 				</ol>");
+		}
+		if(link == "main"){
+			$("#paragraph").html("");
+			$("#title").html("&iquest;Qu&eacute; es el autismo?");
+			$("#link").html("");
+			$("#video").html("");
+			$("belowVideo").html("");
 		}
 	}
 	if(link == "stoplight"){
