@@ -241,7 +241,7 @@ function fillArea(link, language){
 					that the individual is displaying signs of becoming agitated, the support person can \
 					select the &quot;please wait&quot; card from the pulley, put it in the line of vision of the individual, \
 					and point to it. In addition, when the individual is waiting appropriately, verbal praise \
-					such as, “good job waiting” should be provided. Such praise should be given every few \
+					such as, &quot;good job waiting&quot; should be provided. Such praise should be given every few \
 					minutes to encourage the individual to continue displaying appropriate behavior. It may \
 					also help to continue to show him or her the &quot;please wait&quot; card at regular intervals to \
 					remind the individual that she or he is still waiting. \
@@ -288,19 +288,19 @@ function fillArea(link, language){
 		if(link == "stoplight" || link == "countdown"){
 			$("#paragraph").html(" \
 			<p> \
-				Los tableros de semáforos y de conteo regresivo son maneras simples para ayudar a \
+				Los tableros de sem&aacute;foros y de conteo regresivo son maneras simples para ayudar a \
 				estructurar periodos de tiempo indefinido (ej. cuando no es claro cuanto tiempo dure alguna \
 				actividad) \
 			</p> \
 			<ul> \
 				<li> \
-				Un lugar ideal para usar esta plantilla es cuando se está en la sala de espera . \
+				Un lugar ideal para usar esta plantilla es cuando se est&aacute; en la sala de espera. \
 				</li> \
 				<li> \
-				En la plantilla del semáforo, la tarjeta roja, amarilla y verde indican el paso del tiempo. \
+				En la plantilla del sem&aacute;foro, la tarjeta roja, amarilla y verde indican el paso del tiempo. \
 				</li> \
 				<li> \
-				En la plantilla del conteo regresivo, los números 1-5 indican el paso del tiempo. \
+				En la plantilla del conteo regresivo, los n&uacute;meros 1-5 indican el paso del tiempo. \
 				</li> \
 				<li> \
 				En cualquiera de las dos, el adulto manipula el tablero, reflejando el paso del tiempo. \
@@ -313,10 +313,10 @@ function fillArea(link, language){
 			<h2>Para Hacer:</h2> \
 			<ol type='1'> \
 				<li> \
-				Corte las tarjetas de abajo (o dibuje las suyas), laminarlas si es posible				</li> \
+				Corte las tarjetas de abajo (o dibuje las suyas), laminarlas si es posible</li> \
 				<li> \
-				Corte un rectangulo de cartulina que sea mucho más grande que las tarjetas juntas, vea las \
-				imágenes de arriba. \
+				Corte un rectangulo de cartulina que sea mucho m&aacute;s grande que las tarjetas juntas, vea las \
+				im&aacute;genes de arriba. \
 				</li> \
 				<li> \
 				Pegue una columna de velcro verticalmente sobre la cartulina. \
@@ -336,13 +336,13 @@ function fillArea(link, language){
 				<p> \
 				Tomar decisiones puede ser una tarea difícil de realizar para personas dentro de los \
 				trastornos del espectro autista (TEA). Tomar decisiones requiere que la persona considere \
-				todas las opciones adecuadas y posibles, escoger una, e indicar la selección a otra \
+				todas las opciones adecuadas y posibles, escoger una, e indicar la selecci&oacute;n a otra \
 				persona. Pueden surgir dificultades en cualquiera de estos o hasta en todos los pasos. Al \
 				proporcionar a la persona con un tablero de elegir, el o ella podrán ser más capaces de \
 				tomar mejores decisiones. \
 				</p> \
 				<p> \
-				El tablero de elegir es una representación visual de todas las opciones posibles. Al ofrecer \
+				El tablero de elegir es una representaci&oacute;n visual de todas las opciones posibles. Al ofrecer \
 				opciones visuales, la persona no tiene que pensar en las opciones por si misma. Las \
 				opciones visuales pueden ayudar a la persona a enforcarse en las opciones adecuadas en \
 				lugar de distraerse con otras opciones que no sean apropiadas o estén disponibles. Las \
@@ -354,14 +354,14 @@ function fillArea(link, language){
 				</p> \
 				<p> \
 				Depende del nivel de funcionamiento de cada persona, el o ella puede indicar verbalmente \
-				la opción o puede fisícamente remover la tarjeta de elegir del tablero y entregarla al \
+				la opci&oacute;n o puede fis&iacute;camente remover la tarjeta de elegir del tablero y entregarla al \
 				adulto. La tarjeta de elegir también puede ser colocada en el espacio designado para \
-				indicar la opción. \
+				indicar la opci&oacute;n. \
 				</p> \
 				<p><h2>Para Hacer:</h2></p> \
 				<ol type = '1'> \
 					<li> \
-						Empiece tomando en cuenta cuál situación seria las más beneficiosa para usar en el \
+						Empiece tomando en cuenta cuál situaci&oacute;n seria las más beneficiosa para usar en el \
 						tablero de elegir. El tablero de elegir puede ser utilizado a la hora de comer, descansar, \
 						o en cualquier otro momento en el que una opción está disponible. \
 					</li> \
@@ -369,15 +369,15 @@ function fillArea(link, language){
 						Use una de las plantillas dispuestas aqui (o crea la suya)para hacer una lista de opciones. \
 					</li> \
 					<li> \
-						Fije cada opción de elegir a un tablero más grande usando velcro de manera salteada \
-						(no en línea) o de algúna forma, por ejemplo en un cuadrado o círculo. \
+						Fije cada opción de elegir a un tablero m&aacute;s grande usando velcro de manera salteada \
+						(no en l&iacute;nea) o de alguna forma, por ejemplo en un cuadrado o c&iacute;rculo. \
 					</li> \
 				</ol> \
  \
 				<p><h2><Como Usar:</h2></p> \
 				<ol type='1'> \
 					<li> \
-						Cuando es hora de que la persona elija una opción, demuestre el tablero de eligir. \
+						Cuando es hora de que la persona elija una opci&oacute;n, demuestre el tablero de eligir. \
 					</li> \
 					<li> \
 						Use frases simples, como &quot;escoge&quot; o &quot;elige&quot; para indicarle a la persona que puede \
@@ -389,7 +389,7 @@ function fillArea(link, language){
 						elecciones \
 					</li> \
 					<li> \
-						La persona puede necesitar su apoyo a través de instrucciones para tomar una decisión. \
+						La persona puede necesitar su apoyo a través de instrucciones para tomar una decisi&oacute;n. \
 					</li> \
 				</ol> \
 				");
@@ -398,12 +398,12 @@ function fillArea(link, language){
 			$("#paragraph").html(" \
 				<ol> \
 					<li> \
-						Esta estrategia desmuestra una expectación seguida por una actividad preferida (ej. \
-						primero trabajo y después video juegos). \
+						Esta estrategia desmuestra una expectaci&oacute;n seguida por una actividad preferida (ej. \
+						primero trabajo y despu&eacute;s video juegos). \
 					</li> \
 					<li> \
 						El tablero demuestra la primera actividad (usualmente una menos preferida) que tiene que \
-						ocurrir antes que la siguiente actividad (la mas preferida) puede ocurrir. \
+						ocurrir antes que la siguiente actividad (la m&aacute;s preferida) puede ocurrir. \
 					</li> \
 					<li> \
 						Trate de usar este tablero para ayudar a individuos hacer las actividades no preferidas (ej. \
@@ -413,13 +413,13 @@ function fillArea(link, language){
 						Una recompensa tiene que ser disponible imediatamente. \
 					</li> \
 					<li> \
-						La caja de &quot;Después&quot; puede representar una opción de tiempo, recreo, u otra actividad \
+						La caja de &quot;Despu&eacute;s&quot; puede representar una opció&oacute;n de tiempo, recreo, u otra actividad \
 						especifica (ej. gameboy), o un objecto ( ej. libro). Se puede poner en lugar el objecto (como un \
-						libro) en la caja de &quot;Después&quot;, si la foto del objecto no esta disponible. \
+						libro) en la caja de &quot;Despu&eacute;s&quot;, si la foto del objecto no esta disponible. \
 					</li> \
 					<li> \
-						Recuerde de ofrecer una recompensa antes de que algún comportamiento negativo \
-						suceda, asi el individuo no aprenderá a comportarse mal con el fin de tener la recompensa. \
+						Recuerde de ofrecer una recompensa antes de que alg&uacute;n comportamiento negativo \
+						suceda, asi el individuo no aprender&aacute; a comportarse mal con el fin de tener la recompensa. \
 					</li> \
 				<ol> \
 				<h2>Para Hacer:</h2> \
@@ -429,15 +429,15 @@ function fillArea(link, language){
 						&quot;Primero&quot;, laminarlas si es posible. \
 					</li> \
 					<li> \
-						Piense en las posibles recompensas. Use fotografias, objectos, o las imágenes adjuntas \
-						para representar la caja de &quot;Después&quot;, laminarlas si es posible.					</li> \
+						Piense en las posibles recompensas. Use fotografias, objectos, o las im&aacute;genes adjuntas \
+						para representar la caja de &quot;Despu&eacute;s&quot;, laminarlas si es posible.					</li> \
 					<li> \
-						Use al tablero de Primero-y-Después incluido aqui, o dibuje y corte dos cuadros grandes. \
-						Uno va a decir &quot;Primero&quot; en la parte superior y el otro va a decir &quot;Después&quot; en la parte \
+						Use al tablero de Primero-y-Despu&eacute;s incluido aqui, o dibuje y corte dos cuadros grandes. \
+						Uno va a decir &quot;Primero&quot; en la parte superior y el otro va a decir &quot;Despu&eacute;s&quot; en la parte \
 						superior. \
 					</li> \
 					<li> \
-						Use velcro para pegar las fotografias en el tablero de Primero-y-Después (asi como se \
+						Use velcro para pegar las fotografias en el tablero de Primero-y-Despu&eacute;s (asi como se \
 						muestra abajo). \
 					</li> \
 				</ol");
