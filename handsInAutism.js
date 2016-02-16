@@ -95,12 +95,18 @@ function fillArea(link, language){
 				$("#title").html(" \
 					Stoplight \
 				");
+				$("#link").html("\
+					<a href='stoplight.html'>Go To Resource</a>
+				");
 			}else{
 				$("#belowVideo").html(" \
 					<a href='How_to_Video_Count_Down.mp4'>Download this Video</a> \
 				");
 				$("#title").html(" \
 					Countdown \
+				");
+				$("#link").html("\
+					<a href='countdown.html'>Go To Resource</a>
 				");
 			}
 		}
@@ -165,6 +171,9 @@ function fillArea(link, language){
 					</li> \
 				</ol> \
 				");
+			$("#link").html("\
+				<a href='choice-boards.html'>Go To Resource</a>
+			");
 		}
 		if(link == "first-then"){
 			$(".col-link").css("border-color", "grey");
@@ -215,6 +224,9 @@ function fillArea(link, language){
 						Use Velcro to attach pictures on First-Then board in the order shown in the image. \
 					</li> \
 				</ol");
+			$("#link").html("\
+				<a href='first-then.html'>Go To Resource</a>
+			");
 		}
 		if(link == "pulley-cards"){
 			$(".col-link").css("border-color", "grey");
@@ -268,6 +280,9 @@ function fillArea(link, language){
 					<li> \
 						Wear the pulley cards so they are accessible whenever needed. \
 					</li>");
+				$("#link").html("\
+					<a href='pulley-cards.html'>Go To Resource</a>
+				");
 		}
 		if(link == "main"){
 			$("#paragraph").html("");
@@ -490,14 +505,14 @@ function fillArea(link, language){
 		}
 	}
 	if(link == "stoplight"){
-		$("#svideo").html(" \
+		$("#video").html(" \
 			<video controls> \
   				<source src='How_to_Video_Stop_Light.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");
 		$("#belowVideo").html(" \
-			<a href='How_to_Video_Stop_Light.mp4'>Download</a> \
+			<a href='How_to_Video_Stop_Light.mp4' download>Download</a> \
 			");
 	}
 	if(link == "countdown"){
@@ -508,7 +523,7 @@ function fillArea(link, language){
 			</video> \
 			");
 		$("#belowVideo").html(" \
-			<a href='How_to_Video_Count_Down.mp4'>Download</a> \
+			<a href='How_to_Video_Count_Down.mp4' download>Download</a> \
 		");
 	}
 	if(link == "choice-boards"){
@@ -519,7 +534,7 @@ function fillArea(link, language){
 			</video> \
 			");
 		$("#belowVideo").html(" \
-			<a href='How_to_Video_Choice_Boards.mp4'>Download</a> \
+			<a href='How_to_Video_Choice_Boards.mp4' download>Download</a> \
 			");
 	}
 	if(link == "first-then"){
@@ -530,7 +545,7 @@ function fillArea(link, language){
 			</video> \
 			");
 		$("#belowVideo").html(" \
-			<a href='How_to_Video_First_Then.mp4'>Download</a> \
+			<a href='How_to_Video_First_Then.mp4' download>Download</a> \
 			");
 	}
 	if(link == "pulley-cards"){
@@ -541,7 +556,7 @@ function fillArea(link, language){
 			</video> \
 			");
 		$("#belowVideo").html(" \
-			<a href='How_to_Video_Pulley_Card.mp4'>Download</a> \
+			<a href='How_to_Video_Pulley_Card.mp4' download>Download</a> \
 			");
 	}
 }
