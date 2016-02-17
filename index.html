@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="handsInAutism.css">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap.min.css.map">
-    <a href="stopSign"> </a>
+    <!--<a href="stopSign"> </a>-->
     <link rel="stylesheet" href="handsInAutism.css">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap.min.css.map">
@@ -25,9 +25,8 @@
                 </div>
             </div>
         </div>
-        <div style="height: 20px"></div>
-        <div class="row" class="content">
-            <div class="side-col col-sm-2 inline">
+        <div class="line content">
+            <div class="side-col col-sm-2">
                 <a id="stoplight" class="col-link" onclick="fillArea('stoplight', 'english');">Stoplight</a>
                 <a id="countdown" class="col-link" onclick="fillArea('countdown', 'english');">Countdown</a>
 				<a id="first-then" class="col-link" onclick="fillArea('first-then', 'english');">First Then</a>
@@ -35,7 +34,7 @@
 				<a id="choice-boards" class="col-link" onclick="fillArea('choice-boards', 'english');">Choice Boards</a>
 				<a id="main" class="col-link" onclick="fillArea('main', 'english');">Main Page</a>
 				<div id="contact">Contact Us!</div>
-				<div class="social">
+				<div>
 					<center>
 						<img class="social" src="facebook.png">
 						<img class="social" src="twitter.png">
@@ -45,27 +44,28 @@
 					</center>
 				</div>
             </div>
-			
-            <div class="col-sm-10 mid-col inline">
-				<div class="content">
-					<center>
-						<div id="title">
-							What is Autism?
-							<!-- Title goes here -->
-						</div>
-						<div id="link">
-							<!-- Link goes here -->
-						</div>
-						<div id="video" width="500px" height="300px">
-							<!-- Video Goes here -->
-						</div>
-						<div id="belowVideo">
-							<!-- download button goes here -->
-						</div>
-						<div id="paragraph">
-							<!-- Explanatory text goes here -->
-						</div>
-					</center>
+            <div class="col-sm-10 mid-col">
+				<div class="row" style="margin-bottom: 15px">
+					<div class="col-md-3"></div>
+					<div id="title" class="col-md-6">
+						<h1>What is Autism?</h1>
+						<!-- Title goes here -->
+					</div>
+					<div id="link" class="col-md-3">
+						<center><!-- Link goes here --></center>
+					</div>
+				</div>
+				<div class="row">
+					<div id="video">
+						<!-- Video Goes here -->
+						<iframe width="420" height="315" src="https://www.youtube.com/embed/Wxxo4PFXW0Y" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div id="belowVideo" class="row info">
+					<!-- download button goes here -->
+				</div>
+				<div id="paragraph" class="row info">
+					<!-- Explanatory text goes here -->
 				</div>
             </div>
         </div>	

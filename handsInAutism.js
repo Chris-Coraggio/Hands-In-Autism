@@ -96,7 +96,7 @@ function fillArea(link, language){
 					Stoplight \
 				");
 				$("#link").html("\
-					<a href='stoplight.html'>Go To Resource</a>
+					<a href='stopSign.html'>Go To Resource</a> \
 				");
 			}else{
 				$("#belowVideo").html(" \
@@ -106,7 +106,7 @@ function fillArea(link, language){
 					Countdown \
 				");
 				$("#link").html("\
-					<a href='countdown.html'>Go To Resource</a>
+					<a href='countdown.html'>Go To Resource</a> \
 				");
 			}
 		}
@@ -172,7 +172,7 @@ function fillArea(link, language){
 				</ol> \
 				");
 			$("#link").html("\
-				<a href='choice-boards.html'>Go To Resource</a>
+				<a href='choice-boards.html'>Go To Resource</a> \
 			");
 		}
 		if(link == "first-then"){
@@ -225,7 +225,7 @@ function fillArea(link, language){
 					</li> \
 				</ol");
 			$("#link").html("\
-				<a href='first-then.html'>Go To Resource</a>
+				<a href='first-then.html'>Go To Resource</a> \
 			");
 		}
 		if(link == "pulley-cards"){
@@ -281,7 +281,7 @@ function fillArea(link, language){
 						Wear the pulley cards so they are accessible whenever needed. \
 					</li>");
 				$("#link").html("\
-					<a href='pulley-cards.html'>Go To Resource</a>
+					<a href='pulley-cards.html'>Go To Resource</a> \
 				");
 		}
 		if(link == "main"){
@@ -500,7 +500,10 @@ function fillArea(link, language){
 			$("#paragraph").html("");
 			$("#title").html("&iquest;Qu&eacute; es el autismo?");
 			$("#link").html("");
-			$("#video").html("");
+			$("#video").html("\
+			 	<iframe width='420' height='315' src='https://www.youtube.com/embed/Wxxo4PFXW0Y' frameborder='0' allowfullscreen> \
+				</iframe> \
+			");
 			$("belowVideo").html("");
 		}
 	}
