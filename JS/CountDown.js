@@ -1,5 +1,5 @@
 
-var index = 0;
+/* var index = 0;
 
 $(document).ready(function() {
   var picture = [$('.pic'), $('.pic1'), $('.pic2'), $('.pic3'), $('.pic4')];
@@ -24,4 +24,35 @@ $(document).ready(function() {
     
     index++;    
   });
+});
+*/
+
+$(document).ready(function() {
+  var picture = [$('.pic'), $('.pic1'), $('.pic2'), $('.pic3'), $('.pic4')];
+  
+  var pics = ['Pictures/Five.jpg','Pictures/Four.jpg','Pictures/Three.jpg','Pictures/Two.jpg','Pictures/One.jpg'];
+  
+  var boo;
+  
+  console.log("Cool");
+  
+  picture[0].click(function() {
+      boo = 0;
+      picture[boo].css("visibility", "hidden");  
+  });
+  picture[1].click(function() {
+    boo = 1;
+    picture[boo].css("visibility", "hidden");  });
+  picture[2].click(function() {
+    boo = 2;
+    picture[boo].css("visibility", "hidden");
+  });
+  picture[3].click(function() {
+    boo = 3;
+    picture[boo].css("visibility", "hidden");
+  });
+  picture[4].click(function() {
+    boo = 4;
+    picture[boo].css("visibility", "hidden");
+  });  
 });
