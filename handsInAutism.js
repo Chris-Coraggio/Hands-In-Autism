@@ -287,9 +287,12 @@ function fillArea(link, language){
 		if(link == "main"){
 			$("#paragraph").html("");
 			$("#title").html("What is Autism?");
-			$("#link").html("");
-			$("#video").html("");
-			$("belowVideo").html("");
+			$("#link").html(" ");
+			$("#video").html("\
+			 	<iframe width='630px' height='470px' src='https://www.youtube.com/embed/Wxxo4PFXW0Y' frameborder='0' allowfullscreen> \
+				</iframe> \
+		 	");
+			$("belowVideo").html(" ");
 			$(".col-link").css("border-color", "grey");
 			$(".col-link").css("border-width", "2px");
 			$("#main").css("border-color", "#114356");
@@ -510,7 +513,7 @@ function fillArea(link, language){
 	if(link == "stoplight"){
 		$("#video").html(" \
 			<video controls> \
-  				<source src='How_to_Video_Stop_Light.mp4' type='video/mp4'> \
+  				<source class='vid' src='How_to_Video_Stop_Light.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");
@@ -521,7 +524,7 @@ function fillArea(link, language){
 	if(link == "countdown"){
 		$("#video").html(" \
 			<video controls> \
-  				<source src='How_to_Video_Count_Down.mp4' type='video/mp4'> \
+  				<source class='vid' src='How_to_Video_Count_Down.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");
@@ -532,7 +535,7 @@ function fillArea(link, language){
 	if(link == "choice-boards"){
 		$("#video").html(" \
 			<video controls> \
-  				<source src='How_to_Video_Choice_Boards.mp4' type='video/mp4'> \
+  				<source class='vid' src='How_to_Video_Choice_Boards.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");
@@ -543,7 +546,7 @@ function fillArea(link, language){
 	if(link == "first-then"){
 		$("#video").html(" \
 			<video controls> \
-  				<source src='How_to_Video_First_Then.mp4' type='video/mp4'> \
+  				<source class='vid' src='How_to_Video_First_Then.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");
@@ -554,7 +557,7 @@ function fillArea(link, language){
 	if(link == "pulley-cards"){
 		$("#video").html(" \
 			<video controls> \
-  				<source src='How_to_Video_Pulley_Card.mp4' type='video/mp4'> \
+  				<source class='vid' src='How_to_Video_Pulley_Card.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");

@@ -6,14 +6,35 @@
 
 #title{
 	font: 32px Arial, Helvetica, sans-serif;
-	text-align: center;
+	text-align: left;
 }
 
 #subtitle{
-	text-align: center;
+	text-align: left;
 	font: 24px Arial, Helvetica, sans-serif;
 }
 #video{
+	text-align: center;
+}
+#what{
+	background-color: white;
+	border-radius: 15px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+#paragraph{
+	padding-left: 150px;
+	padding-right: 150px;
+}
+.vid{
+	width: 700px;
+	height; 470px;
+}
+#belowVideo{
 	text-align: center;
 }
 .info{
@@ -26,7 +47,7 @@
 	border-radius: 5px;
 	width: 100px;
 	text-align: center;
-	margin: 10px;
+	margin: 20px;
 }
 li{
 	text-align: left;
@@ -45,26 +66,34 @@ li{
 	background-color: white;
 }
 .content{
-	margin-top: 20px;
 	margin-left: -15px;
 	margin-right: -15px;
 }
 #link{
 	height: 50px;
-	width: 200px;
+	width: 325px;
 	background-color: #e5eeff;
 	padding: 10px;
 	border-radius: 10px;
 	font-size: 150%;
 	text-align: center;
 }
+#linkbox{
+	height: 50px;
+	width: 325px;
+}
 .side-col{
-	background-color: #3fb0ac;
+	background-color: #2DCC70;
 	border-right: 2px solid grey;
 	border-top: 2px solid grey;
-	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 	margin-bottom: 15px;
+	text-align: center;
+}
+.resrources{
+	text-align: center;
+	font-size: 200%;
+	
 }
 .mid-col{
 	background-color: white;
@@ -72,7 +101,6 @@ li{
 	padding-top: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
-	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	margin-bottom: 15px;
 }
@@ -80,10 +108,10 @@ li{
 	display: flex;
 }
 #theTitle{
-	text-align: center;
+	text-align: left;
 }
 #head{
-	background-color: #114356;
+	background-color: #2DCC70;
 	color: white;
 	padding: 10px;
 	padding-top: 0px;
