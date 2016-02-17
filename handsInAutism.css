@@ -5,11 +5,8 @@
 }
 
 #title{
-	text-align: center;
-}
-
-#title{
 	font: 54px Arial, Helvetica, sans-serif;
+	text-align: center;
 }
 
 #subtitle{
@@ -26,6 +23,9 @@
 	margin: 10px;
 }
 
+li{
+	text-align: left;
+}
 .col-link{
 	display: block;
 	text-align: center;

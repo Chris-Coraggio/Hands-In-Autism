@@ -38,6 +38,17 @@ function fillArea(link, language){
 
 	if(language == "english"){
 		if(link == "stoplight" || link == "countdown"){
+			if(link == "stoplight"){
+				$(".col-link").css("border-color", "grey");
+				$(".col-link").css("border-width", "2px");
+				$("#stoplight").css("border-color", "#114356");
+				$("#stoplight").css("border-width", "3px");
+			}else if(link == "countdown"){
+				$(".col-link").css("border-color", "grey");
+				$(".col-link").css("border-width", "2px");
+				$("#countdown").css("border-color", "#114356");
+				$("#countdown").css("border-width", "3px");
+			}
 				$("#paragraph").html(
 				"<p> \
 					Stoplights and countdown boards are simple ways to help structure undefined periods of time (i.e., when it is unclear how long an activity will last). \
@@ -84,6 +95,9 @@ function fillArea(link, language){
 				$("#title").html(" \
 					Stoplight \
 				");
+				$("#link").html("\
+					<a href='stoplight.html'>Go To Resource</a>
+				");
 			}else{
 				$("#belowVideo").html(" \
 					<a href='How_to_Video_Count_Down.mp4'>Download this Video</a> \
@@ -91,9 +105,16 @@ function fillArea(link, language){
 				$("#title").html(" \
 					Countdown \
 				");
+				$("#link").html("\
+					<a href='countdown.html'>Go To Resource</a>
+				");
 			}
 		}
 		if(link == "choice-boards"){
+			$(".col-link").css("border-color", "grey");
+			$(".col-link").css("border-width", "2px");
+			$("#choice-boards").css("border-color", "#114356");
+			$("#choice-boards").css("border-width", "3px");
 			$("#paragraph").html(" \
 				<p> \
 				Making choices can be a difficult task for some individuals with Autism Spectrum Disorder \
@@ -147,17 +168,24 @@ function fillArea(link, language){
 					</li> \
 				</ol> \
 				");
+			$("#link").html("\
+				<a href='choice-boards.html'>Go To Resource</a>
+			");
 		}
 		if(link == "first-then"){
+			$(".col-link").css("border-color", "grey");
+			$(".col-link").css("border-width", "2px");
+			$("#first-then").css("border-color", "#114356");
+			$("#first-then").css("border-width", "3px");
 			$("#paragraph").html(" \
 				<ol> \
 					<li> \
 						A first/then board is a specific strategy that shows what is expected of the individual \
 						through the use of a picture of the first activity followed by a picture of the following \
 						activity. The &quot;first&quot; activity is usually a less desired activity and the “then” activity is a \
-						more preferred activity, such as  “choice time”, “break time”, a specific activity (e.g., \
+						more preferred activity, such as  &quot;choice time&quot;, &quot;break time&quot;, a specific activity (e.g., \
 						game), or an object (e.g., book). It is okay to place a concrete object (such as a book) on \
-						the “Then” box if no pictures are available. \
+						the &quot;Then&quot; box if no pictures are available. \
 					</li> \
 					<li> \
 						Try using first-then boards to help individuals through non-preferred tasks (e.g., home- \
@@ -174,24 +202,31 @@ function fillArea(link, language){
 				<h2>To Make:</h2> \
 				<ol type='1'> \
 					<li> \
-						Take photographs or cut out the images available here to represent the “first” task. \
+						Take photographs or cut out the images available here to represent the &quot;first&quot; task. \
 						Text could alternatively be used if appropriate for the individual. Laminate the pic- \
 						tures/text if possible or cover with clear contact paper. \
 					</li> \
 					<li> \
 						Think about possible rewards. Use photographs, text, objects, or the attached images \
-						to represent the “then”.  Laminate if possible or cover with contact paper. \
+						to represent the &quot;then&quot;.  Laminate if possible or cover with contact paper. \
 					</li> \
 					<li> \
 						Use the First-Then board included here, or draw and cut out two large squares, one \
-						with “First” above it, and one with “Then” above it. \
+						with &quot;First&quot; above it, and one with &quot;Then&quot; above it. \
 					</li> \
 					<li> \
 						Use Velcro to attach pictures on First-Then board in the order shown in the image. \
 					</li> \
 				</ol");
+			$("#link").html("\
+				<a href='first-then.html'>Go To Resource</a>
+			");
 		}
 		if(link == "pulley-cards"){
+			$(".col-link").css("border-color", "grey");
+			$(".col-link").css("border-width", "2px");
+			$("#pulley-cards").css("border-color", "#114356");
+			$("#pulley-cards").css("border-width", "3px");
 			$("#paragraph").html(" \
 				<p> \
 					Although it is helpful to keep a variety of pictures available for communication with \
@@ -203,13 +238,13 @@ function fillArea(link, language){
 					support person. \
 				</p> \
 				<p> \
-					One common card to include is a “please wait” card. Often, individuals with ASD have a \
+					One common card to include is a &quot;please wait&quot; card. Often, individuals with ASD have a \
 					tendency to engage in maladaptive behaviors to gain the attention of their caretakers. \
 					&quot;Please wait&quot; cards can be used to prevent disruptive behaviors. Once it is recognized \
 					that the individual is displaying signs of becoming agitated, the support person can \
-					select the &quot;please wait” card from the pulley, put it in the line of vision of the individual, \
+					select the &quot;please wait&quot; card from the pulley, put it in the line of vision of the individual, \
 					and point to it. In addition, when the individual is waiting appropriately, verbal praise \
-					such as, “good job waiting” should be provided. Such praise should be given every few \
+					such as, &quot;good job waiting&quot; should be provided. Such praise should be given every few \
 					minutes to encourage the individual to continue displaying appropriate behavior. It may \
 					also help to continue to show him or her the &quot;please wait&quot; card at regular intervals to \
 					remind the individual that she or he is still waiting. \
@@ -236,32 +271,42 @@ function fillArea(link, language){
 					<li> \
 						Wear the pulley cards so they are accessible whenever needed. \
 					</li>");
+				$("#link").html("\
+					<a href='pulley-cards.html'>Go To Resource</a>
+				");
 		}
 		if(link == "main"){
 			$("#paragraph").html("");
-			$("#title").html("What is autism?");
+			$("#title").html("What is Autism?");
 			$("#link").html("");
 			$("#video").html("");
 			$("belowVideo").html("");
+			$(".col-link").css("border-color", "grey");
+			$(".col-link").css("border-width", "2px");
+			$("#main").css("border-color", "#114356");
+			$("#main").css("border-width", "3px");
+		}else if(link != "main"){
+			$("#main").css("border-color", "grey");
+			$("#main").css("border-width", "2px");
 		}
 	}
 	if(language == "spanish"){
 		if(link == "stoplight" || link == "countdown"){
 			$("#paragraph").html(" \
 			<p> \
-				Los tableros de semáforos y de conteo regresivo son maneras simples para ayudar a \
+				Los tableros de sem&aacute;foros y de conteo regresivo son maneras simples para ayudar a \
 				estructurar periodos de tiempo indefinido (ej. cuando no es claro cuanto tiempo dure alguna \
 				actividad) \
 			</p> \
 			<ul> \
 				<li> \
-				Un lugar ideal para usar esta plantilla es cuando se está en la sala de espera . \
+				Un lugar ideal para usar esta plantilla es cuando se est&aacute; en la sala de espera. \
 				</li> \
 				<li> \
-				En la plantilla del semáforo, la tarjeta roja, amarilla y verde indican el paso del tiempo. \
+				En la plantilla del sem&aacute;foro, la tarjeta roja, amarilla y verde indican el paso del tiempo. \
 				</li> \
 				<li> \
-				En la plantilla del conteo regresivo, los números 1-5 indican el paso del tiempo. \
+				En la plantilla del conteo regresivo, los n&uacute;meros 1-5 indican el paso del tiempo. \
 				</li> \
 				<li> \
 				En cualquiera de las dos, el adulto manipula el tablero, reflejando el paso del tiempo. \
@@ -274,10 +319,10 @@ function fillArea(link, language){
 			<h2>Para Hacer:</h2> \
 			<ol type='1'> \
 				<li> \
-				Corte las tarjetas de abajo (o dibuje las suyas), laminarlas si es posible				</li> \
+				Corte las tarjetas de abajo (o dibuje las suyas), laminarlas si es posible</li> \
 				<li> \
-				Corte un rectangulo de cartulina que sea mucho más grande que las tarjetas juntas, vea las \
-				imágenes de arriba. \
+				Corte un rectangulo de cartulina que sea mucho m&aacute;s grande que las tarjetas juntas, vea las \
+				im&aacute;genes de arriba. \
 				</li> \
 				<li> \
 				Pegue una columna de velcro verticalmente sobre la cartulina. \
@@ -297,13 +342,13 @@ function fillArea(link, language){
 				<p> \
 				Tomar decisiones puede ser una tarea difícil de realizar para personas dentro de los \
 				trastornos del espectro autista (TEA). Tomar decisiones requiere que la persona considere \
-				todas las opciones adecuadas y posibles, escoger una, e indicar la selección a otra \
+				todas las opciones adecuadas y posibles, escoger una, e indicar la selecci&oacute;n a otra \
 				persona. Pueden surgir dificultades en cualquiera de estos o hasta en todos los pasos. Al \
 				proporcionar a la persona con un tablero de elegir, el o ella podrán ser más capaces de \
 				tomar mejores decisiones. \
 				</p> \
 				<p> \
-				El tablero de elegir es una representación visual de todas las opciones posibles. Al ofrecer \
+				El tablero de elegir es una representaci&oacute;n visual de todas las opciones posibles. Al ofrecer \
 				opciones visuales, la persona no tiene que pensar en las opciones por si misma. Las \
 				opciones visuales pueden ayudar a la persona a enforcarse en las opciones adecuadas en \
 				lugar de distraerse con otras opciones que no sean apropiadas o estén disponibles. Las \
@@ -315,14 +360,14 @@ function fillArea(link, language){
 				</p> \
 				<p> \
 				Depende del nivel de funcionamiento de cada persona, el o ella puede indicar verbalmente \
-				la opción o puede fisícamente remover la tarjeta de elegir del tablero y entregarla al \
+				la opci&oacute;n o puede fis&iacute;camente remover la tarjeta de elegir del tablero y entregarla al \
 				adulto. La tarjeta de elegir también puede ser colocada en el espacio designado para \
-				indicar la opción. \
+				indicar la opci&oacute;n. \
 				</p> \
 				<p><h2>Para Hacer:</h2></p> \
 				<ol type = '1'> \
 					<li> \
-						Empiece tomando en cuenta cuál situación seria las más beneficiosa para usar en el \
+						Empiece tomando en cuenta cuál situaci&oacute;n seria las más beneficiosa para usar en el \
 						tablero de elegir. El tablero de elegir puede ser utilizado a la hora de comer, descansar, \
 						o en cualquier otro momento en el que una opción está disponible. \
 					</li> \
@@ -330,15 +375,15 @@ function fillArea(link, language){
 						Use una de las plantillas dispuestas aqui (o crea la suya)para hacer una lista de opciones. \
 					</li> \
 					<li> \
-						Fije cada opción de elegir a un tablero más grande usando velcro de manera salteada \
-						(no en línea) o de algúna forma, por ejemplo en un cuadrado o círculo. \
+						Fije cada opción de elegir a un tablero m&aacute;s grande usando velcro de manera salteada \
+						(no en l&iacute;nea) o de alguna forma, por ejemplo en un cuadrado o c&iacute;rculo. \
 					</li> \
 				</ol> \
  \
 				<p><h2><Como Usar:</h2></p> \
 				<ol type='1'> \
 					<li> \
-						Cuando es hora de que la persona elija una opción, demuestre el tablero de eligir. \
+						Cuando es hora de que la persona elija una opci&oacute;n, demuestre el tablero de eligir. \
 					</li> \
 					<li> \
 						Use frases simples, como &quot;escoge&quot; o &quot;elige&quot; para indicarle a la persona que puede \
@@ -350,7 +395,7 @@ function fillArea(link, language){
 						elecciones \
 					</li> \
 					<li> \
-						La persona puede necesitar su apoyo a través de instrucciones para tomar una decisión. \
+						La persona puede necesitar su apoyo a través de instrucciones para tomar una decisi&oacute;n. \
 					</li> \
 				</ol> \
 				");
@@ -359,12 +404,12 @@ function fillArea(link, language){
 			$("#paragraph").html(" \
 				<ol> \
 					<li> \
-						Esta estrategia desmuestra una expectación seguida por una actividad preferida (ej. \
-						primero trabajo y después video juegos). \
+						Esta estrategia desmuestra una expectaci&oacute;n seguida por una actividad preferida (ej. \
+						primero trabajo y despu&eacute;s video juegos). \
 					</li> \
 					<li> \
 						El tablero demuestra la primera actividad (usualmente una menos preferida) que tiene que \
-						ocurrir antes que la siguiente actividad (la mas preferida) puede ocurrir. \
+						ocurrir antes que la siguiente actividad (la m&aacute;s preferida) puede ocurrir. \
 					</li> \
 					<li> \
 						Trate de usar este tablero para ayudar a individuos hacer las actividades no preferidas (ej. \
@@ -374,13 +419,13 @@ function fillArea(link, language){
 						Una recompensa tiene que ser disponible imediatamente. \
 					</li> \
 					<li> \
-						La caja de &quot;Después&quot; puede representar una opción de tiempo, recreo, u otra actividad \
+						La caja de &quot;Despu&eacute;s&quot; puede representar una opció&oacute;n de tiempo, recreo, u otra actividad \
 						especifica (ej. gameboy), o un objecto ( ej. libro). Se puede poner en lugar el objecto (como un \
-						libro) en la caja de &quot;Después&quot;, si la foto del objecto no esta disponible. \
+						libro) en la caja de &quot;Despu&eacute;s&quot;, si la foto del objecto no esta disponible. \
 					</li> \
 					<li> \
-						Recuerde de ofrecer una recompensa antes de que algún comportamiento negativo \
-						suceda, asi el individuo no aprenderá a comportarse mal con el fin de tener la recompensa. \
+						Recuerde de ofrecer una recompensa antes de que alg&uacute;n comportamiento negativo \
+						suceda, asi el individuo no aprender&aacute; a comportarse mal con el fin de tener la recompensa. \
 					</li> \
 				<ol> \
 				<h2>Para Hacer:</h2> \
@@ -390,15 +435,15 @@ function fillArea(link, language){
 						&quot;Primero&quot;, laminarlas si es posible. \
 					</li> \
 					<li> \
-						Piense en las posibles recompensas. Use fotografias, objectos, o las imágenes adjuntas \
-						para representar la caja de &quot;Después&quot;, laminarlas si es posible.					</li> \
+						Piense en las posibles recompensas. Use fotografias, objectos, o las im&aacute;genes adjuntas \
+						para representar la caja de &quot;Despu&eacute;s&quot;, laminarlas si es posible.					</li> \
 					<li> \
-						Use al tablero de Primero-y-Después incluido aqui, o dibuje y corte dos cuadros grandes. \
-						Uno va a decir &quot;Primero&quot; en la parte superior y el otro va a decir &quot;Después&quot; en la parte \
+						Use al tablero de Primero-y-Despu&eacute;s incluido aqui, o dibuje y corte dos cuadros grandes. \
+						Uno va a decir &quot;Primero&quot; en la parte superior y el otro va a decir &quot;Despu&eacute;s&quot; en la parte \
 						superior. \
 					</li> \
 					<li> \
-						Use velcro para pegar las fotografias en el tablero de Primero-y-Después (asi como se \
+						Use velcro para pegar las fotografias en el tablero de Primero-y-Despu&eacute;s (asi como se \
 						muestra abajo). \
 					</li> \
 				</ol");
@@ -442,16 +487,23 @@ function fillArea(link, language){
 					</li> \
 				</ol>");
 		}
+		if(link == "main"){
+			$("#paragraph").html("");
+			$("#title").html("&iquest;Qu&eacute; es el autismo?");
+			$("#link").html("");
+			$("#video").html("");
+			$("belowVideo").html("");
+		}
 	}
 	if(link == "stoplight"){
-		$("#svideo").html(" \
+		$("#video").html(" \
 			<video controls> \
   				<source src='How_to_Video_Stop_Light.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
 			");
 		$("#belowVideo").html(" \
-			<a href='How_to_Video_Stop_Light.mp4'>Download</a> \
+			<a href='How_to_Video_Stop_Light.mp4' download>Download</a> \
 			");
 	}
 	if(link == "countdown"){
@@ -462,7 +514,7 @@ function fillArea(link, language){
 			</video> \
 			");
 		$("#belowVideo").html(" \
-			<a href='How_to_Video_Count_Down.mp4'>Download</a> \
+			<a href='How_to_Video_Count_Down.mp4' download>Download</a> \
 		");
 	}
 	if(link == "choice-boards"){
@@ -473,7 +525,7 @@ function fillArea(link, language){
 			</video> \
 			");
 		$("#belowVideo").html(" \
-			<a href='How_to_Video_Choice_Boards.mp4'>Download</a> \
+			<a href='How_to_Video_Choice_Boards.mp4' download>Download</a> \
 			");
 		$("#title").html(" \
 			<h1> Choice Boards </h1> \
@@ -487,7 +539,7 @@ function fillArea(link, language){
 			</video> \
 			");
 		$("#belowVideo").html(" \
-			<a href='How_to_Video_First_Then.mp4'>Download</a> \
+			<a href='How_to_Video_First_Then.mp4' download>Download</a> \
 			");
 		$("#title").html(" \
 			<h1> First Then </h1> \
@@ -501,7 +553,7 @@ function fillArea(link, language){
 			</video> \
 			");
 		$("#belowVideo").html(" \
-			<a href='How_to_Video_Pulley_Card.mp4'>Download</a> \
+			<a href='How_to_Video_Pulley_Card.mp4' download>Download</a> \
 			");
 		$("#title").html(" \
 			<h1> Pulley Cards </h1> \
