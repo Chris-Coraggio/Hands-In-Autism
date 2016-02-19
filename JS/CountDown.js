@@ -38,29 +38,30 @@ $(document).ready(function() {
   
   picture[0].click(function() {
       boo = 0;
-      picture[boo].hide();  
+      picture[boo].css("visibility", "hidden");  
   });
   picture[1].click(function() {
     boo = 1;
-    picture[boo].hide();  });
+    picture[boo].css("visibility", "hidden");  
+  });
   picture[2].click(function() {
     boo = 2;
-    picture[boo].hide();
+    picture[boo].css("visibility", "hidden");  
   });
   picture[3].click(function() {
     boo = 3;
-    picture[boo].hide();
+    picture[boo].css("visibility", "hidden");  
   });
   picture[4].click(function() {
     boo = 4;
-    picture[boo].hide();
+    picture[boo].css("visibility", "hidden");  
   });  
   $(".reset").click(function(){
-	  picture[0].show();  
-	  picture[1].show(); 
-	  picture[2].show(); 
-	  picture[3].show(); 
-	  picture[4].show(); 
+	  picture[0].css("visibility", "visible");  
+	  picture[1].css("visibility", "visible");  
+	  picture[2].css("visibility", "visible");  
+	  picture[3].css("visibility", "visible");  
+	  picture[4].css("visibility", "visible");   
 
   });
 });
