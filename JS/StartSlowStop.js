@@ -1,15 +1,18 @@
 
 $(document).ready(function() {
-  var start = $("#Start");
-  var picture = $('#picture');
-
-  var imgs = ['Pictures/Start.png', 'Pictures/Slow.png', 'Pictures/Stop.png'];
-  var curIndex = imgs.length - 1;
-
-  picture.click(function() {
-    curIndex = (curIndex + 1) % imgs.length;
-    picture.prop("src", imgs[curIndex]);
-  });
-
-  picture.click();
+	$("#start").click(function() {
+	  $("#start").css("opacity", "1.0");
+	  $("#slow").css("opacity", "0.3");
+	  $("#stop").css("opacity", "0.3");
+	});
+	$("#slow").click(function() {
+	  $("#slow").css("opacity", "1.0");
+      $("#start").css("opacity", "0.3");
+	  $("#stop").css("opacity", "0.3");
+	});
+	$("#stop").click(function() {
+	  $("#stop").css("opacity", "1.0");
+      $("#slow").css("opacity", "0.3");
+	  $("#start").css("opacity", "0.3");
+	});
 });
