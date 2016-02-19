@@ -43,7 +43,12 @@ function fillArea(link, language){
 			console.log("Hi");
 			
 			$("#paragraph").html("");
-			$("#title").html("What is Autism?");
+			if(language == "english"){
+				$("#title").html("What is Autism?");
+			}
+			if(language == "spanish"){
+				$("#title").html("&iquest;Qu&eacute; es el autismo?");
+			}
 			$("#link").hide();
 			$("#video").html("\
 			 	<iframe width='630px' height='470px' src='https://www.youtube.com/embed/Wxxo4PFXW0Y' frameborder='0' allowfullscreen> \
@@ -347,31 +352,33 @@ function fillArea(link, language){
 				</li> \
 				<li> \
 				Corte tres pedazos del otro velcro y pegue uno en la parte trasera de cada tarjeta en la \
-				orden en que se muestra en las imágenes de arriba. \
+				orden en que se muestra en las im&aacute;genes de arriba. \
 				</li> \
 				<li> \
 				Pegue otra columna de velcro en la parte trasera de la cartulina para sostener las tarjetas \
 				que se quitan. \
 				</li> \
 			</ol>");
+			if(link == "countdown") $("#title").html("Conteo regresivo");
+			if(link == "stoplight") $("#title").html("Sem&aacute;foro");
 		}
 		if(link == "choice-boards"){
 			$("#paragraph").html(" \
 				<p> \
-				Tomar decisiones puede ser una tarea difícil de realizar para personas dentro de los \
+				Tomar decisiones puede ser una tarea dif&iacute;cil de realizar para personas dentro de los \
 				trastornos del espectro autista (TEA). Tomar decisiones requiere que la persona considere \
 				todas las opciones adecuadas y posibles, escoger una, e indicar la selecci&oacute;n a otra \
 				persona. Pueden surgir dificultades en cualquiera de estos o hasta en todos los pasos. Al \
-				proporcionar a la persona con un tablero de elegir, el o ella podrán ser más capaces de \
+				proporcionar a la persona con un tablero de elegir, el o ella podr&aacute;n ser m&aacute;s capaces de \
 				tomar mejores decisiones. \
 				</p> \
 				<p> \
 				El tablero de elegir es una representaci&oacute;n visual de todas las opciones posibles. Al ofrecer \
 				opciones visuales, la persona no tiene que pensar en las opciones por si misma. Las \
 				opciones visuales pueden ayudar a la persona a enforcarse en las opciones adecuadas en \
-				lugar de distraerse con otras opciones que no sean apropiadas o estén disponibles. Las \
+				lugar de distraerse con otras opciones que no sean apropiadas o est&eacute;n disponibles. Las \
 				opciones en el tablero de elegir deben de estar acomodadas en forma de algúna figura o \
-				salteadas y no puestas en línea. Una lista de palabras o de imágenes puestas en una línea \
+				salteadas y no puestas en l&iacute;nea. Una lista de palabras o de im&acute;genes puestas en una l&iacute;nea \
 				pueden ser confundidas por un horario, en consecuencia la persona va a creer que tiene \
 				que terminar cada actividad en orden. En el tablero de elegir, las opciones son arregladas \
 				de manera salteada, estimulando que la persona seleccione cualquiera de las opciones. \
@@ -379,26 +386,28 @@ function fillArea(link, language){
 				<p> \
 				Depende del nivel de funcionamiento de cada persona, el o ella puede indicar verbalmente \
 				la opci&oacute;n o puede fis&iacute;camente remover la tarjeta de elegir del tablero y entregarla al \
-				adulto. La tarjeta de elegir también puede ser colocada en el espacio designado para \
+				adulto. La tarjeta de elegir tambi&eacute;n puede ser colocada en el espacio designado para \
 				indicar la opci&oacute;n. \
 				</p> \
 				<p><h2>Para Hacer:</h2></p> \
 				<ol type = '1'> \
 					<li> \
-						Empiece tomando en cuenta cuál situaci&oacute;n seria las más beneficiosa para usar en el \
+						Empiece tomando en cuenta cu&aacute;l situaci&oacute;n seria la m&aacute;s beneficiosa para usar en el \
 						tablero de elegir. El tablero de elegir puede ser utilizado a la hora de comer, descansar, \
-						o en cualquier otro momento en el que una opción está disponible. \
+						o en cualquier otro momento en el que una opci&oacute;n est&aacute; disponible. \
 					</li> \
 					<li> \
-						Use una de las plantillas dispuestas aqui (o crea la suya)para hacer una lista de opciones. \
+						Use una de las plantillas dispuestas aqu&iacute; (o crea la suya) para hacer una lista de opciones. \
 					</li> \
 					<li> \
-						Fije cada opción de elegir a un tablero m&aacute;s grande usando velcro de manera salteada \
+						Fije cada opci&oacute;n de elegir a un tablero m&aacute;s grande usando velcro de manera salteada \
 						(no en l&iacute;nea) o de alguna forma, por ejemplo en un cuadrado o c&iacute;rculo. \
 					</li> \
 				</ol> \
  \
-				<p><h2><Como Usar:</h2></p> \
+				<p> \
+					<h2>Como Usar:</h2> \
+				</p> \
 				<ol type='1'> \
 					<li> \
 						Cuando es hora de que la persona elija una opci&oacute;n, demuestre el tablero de eligir. \
@@ -413,10 +422,11 @@ function fillArea(link, language){
 						elecciones \
 					</li> \
 					<li> \
-						La persona puede necesitar su apoyo a través de instrucciones para tomar una decisi&oacute;n. \
+						La persona puede necesitar su apoyo a trav&eacute;s de instrucciones para tomar una decisi&oacute;n. \
 					</li> \
 				</ol> \
 				");
+			$("#title").html("Tableros de elegir");
 		}
 		if(link == "first-then"){
 			$("#paragraph").html(" \
@@ -437,7 +447,7 @@ function fillArea(link, language){
 						Una recompensa tiene que ser disponible imediatamente. \
 					</li> \
 					<li> \
-						La caja de &quot;Despu&eacute;s&quot; puede representar una opció&oacute;n de tiempo, recreo, u otra actividad \
+						La caja de &quot;Despu&eacute;s&quot; puede representar una opci&oacute;n de tiempo, recreo, u otra actividad \
 						especifica (ej. gameboy), o un objecto ( ej. libro). Se puede poner en lugar el objecto (como un \
 						libro) en la caja de &quot;Despu&eacute;s&quot;, si la foto del objecto no esta disponible. \
 					</li> \
@@ -449,7 +459,7 @@ function fillArea(link, language){
 				<h2>Para Hacer:</h2> \
 				<ol type='1'> \
 					<li> \
-						Tome fotografias o corte las imágenes disponibles aqui para representar la caja de \
+						Tome fotografias o corte las im&aacute;genes disponibles aqui para representar la caja de \
 						&quot;Primero&quot;, laminarlas si es posible. \
 					</li> \
 					<li> \
@@ -465,6 +475,7 @@ function fillArea(link, language){
 						muestra abajo). \
 					</li> \
 				</ol");
+			$("#title").html("Primero y Despu&eacute;s");
 		}
 		if(link == "pulley-cards"){
 			$("#paragraph").html(" \
@@ -504,6 +515,7 @@ function fillArea(link, language){
 						Lleve las tarjetas poleas para que sean accesibles \
 					</li> \
 				</ol>");
+			$("#title").html("Tableros poleas");
 		}
 		if(link == "main"){
 			$("#paragraph").html("");
