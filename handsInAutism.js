@@ -1,5 +1,9 @@
-function fillArea(link, language){
+$(document).ready(function() {
+	fillArea("main", "english");
+});
 
+function fillArea(link, language){
+	
 	/* 
 	links include:
 		stoplight
@@ -34,9 +38,28 @@ function fillArea(link, language){
 	How_to_Video_Pulley_Card.mp4
 	*/
 
-	console.log("Yo! I made it!");
-
 	if(language == "english"){
+		if(link == "main"){
+			console.log("Hi");
+			
+			$("#paragraph").html("");
+			$("#title").html("What is Autism?");
+			$("#link").hide();
+			$("#video").html("\
+			 	<iframe width='630px' height='470px' src='https://www.youtube.com/embed/Wxxo4PFXW0Y' frameborder='0' allowfullscreen> \
+				</iframe> \
+		 	");
+			$("#belowVideo").hide();
+			$(".col-link").css("border-color", "grey");
+			$(".col-link").css("border-width", "2px");
+			$("#main").css("border-color", "#114356");
+			$("#main").css("border-width", "3px");
+		}else if(link != "main"){
+			$("#main").css("border-color", "grey");
+			$("#main").css("border-width", "2px");
+			$("#link").show();
+			$("#belowVideo").show();
+		}
 		if(link == "stoplight" || link == "countdown"){
 			if(link == "stoplight"){
 				$(".col-link").css("border-color", "grey");
@@ -283,23 +306,6 @@ function fillArea(link, language){
 				$("#link").html("\
 					<a href='pulley-cards.html'>Go To Resource</a> \
 				");
-		}
-		if(link == "main"){
-			$("#paragraph").html("");
-			$("#title").html("What is Autism?");
-			$("#link").html(" ");
-			$("#video").html("\
-			 	<iframe width='630px' height='470px' src='https://www.youtube.com/embed/Wxxo4PFXW0Y' frameborder='0' allowfullscreen> \
-				</iframe> \
-		 	");
-			$("belowVideo").html(" ");
-			$(".col-link").css("border-color", "grey");
-			$(".col-link").css("border-width", "2px");
-			$("#main").css("border-color", "#114356");
-			$("#main").css("border-width", "3px");
-		}else if(link != "main"){
-			$("#main").css("border-color", "grey");
-			$("#main").css("border-width", "2px");
 		}
 	}
 	if(language == "spanish"){
