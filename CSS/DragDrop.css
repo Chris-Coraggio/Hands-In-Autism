@@ -3,6 +3,7 @@
   height:100%;
   padding:10px;
   border:1px solid #aaaaaa;
+  min-height: 100px;
 }
 #pic1 {
   width: 150px;
