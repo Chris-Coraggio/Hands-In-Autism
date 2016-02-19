@@ -119,7 +119,7 @@ function fillArea(link, language){
 					Stoplight \
 				");
 				$("#link").html("\
-					<a href='stopSign.html'>Go To Resource</a> \
+					<a href='stopsign.html'>Go To Resource</a> \
 				");
 			}else{
 				$("#belowVideo").html(" \
@@ -129,7 +129,7 @@ function fillArea(link, language){
 					Countdown \
 				");
 				$("#link").html("\
-					<a href='countdown.html'>Go To Resource</a> \
+					<a href='countDown.html'>Go To Resource</a> \
 				");
 			}
 		}
@@ -195,7 +195,7 @@ function fillArea(link, language){
 				</ol> \
 				");
 			$("#link").html("\
-				<a href='choice-boards.html'>Go To Resource</a> \
+				<a href='Choices.html'>Go To Resource</a> \
 			");
 		}
 		if(link == "first-then"){
@@ -248,7 +248,7 @@ function fillArea(link, language){
 					</li> \
 				</ol");
 			$("#link").html("\
-				<a href='first-then.html'>Go To Resource</a> \
+				<a href='FirstThen.html'>Go To Resource</a> \
 			");
 		}
 		if(link == "pulley-cards"){
@@ -304,7 +304,7 @@ function fillArea(link, language){
 						Wear the pulley cards so they are accessible whenever needed. \
 					</li>");
 				$("#link").html("\
-					<a href='pulley-cards.html'>Go To Resource</a> \
+					<a href='Choices.html'>Go To Resource</a> \
 				");
 		}
 	}
