@@ -9,25 +9,48 @@
     <link rel="stylesheet" href="handsInAutism.css">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap.min.css.map">
+	
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="handsInAutism.js"></script>
 </head>
-<body style="background-color: #98999F">
+<body style="background-color: #0080ff">
     <div class="container">
         <div id="head" class="row">
-            <div class="col-sm-3">
+			<div style="padding-top: 5px" class="col-sm-2">
+				<img height="150px"src="logo.psd">
+			</div>
+            <div id="theTitle" class="col-sm-8">
+                <h1>Recursos para el autismo</h1>
+                <div id="subtitle">
+                    HANDS in Autism&reg; - Centro de entrenamiento interdisciplinario y recursos
+                </div>
+				<div id="subtitle">
+                    TechHOUNDS Robotics - Carmel High School Robotics Team
+                </div>
+            </div>
+			<div class="col-sm-2">
                 <a href="index.html"><div class="lang">English</div></a>
 				<a href="indexEspanol.html"><div class="lang">Espa&ntilde;ol</div></a>
             </div>
-            <div id="theTitle" class="col-sm-6">
-                <h1>HANDS in Autism&reg;</h1>
-                <div id="subtitle">
-                    Centro de entrenamiento interdisciplinario y recursos
-                </div>
-            </div>
         </div>
+		<div id="what" class="row content">
+			<div>
+				<h2 style="text-decoration: underline; text-align: center;">&iquest;Qu&eacute; son recursos para el autismo?</h2>
+			</div>
+			<div>
+				<p>
+				Esta p&aacute;gina les ofrece a familias con hijos con el autismo acceso a sus rescursos tradicionales en l&iacute;nea. Tarjetas como Tableros de Elegir, Sem&aacue;foro, y Primero y Despu&eacute;s se han digitalizado para que se puedan usar m&aacute;s f&aacute;cilmente y para que est&eacute;n en una forma m&aacute;s c&oacute;moda para ni&ntilde;os con el autismo. Estos recursos fueron desarrollados por el TechHOUNDS Robotics Team, que trabaj&oacute; con HANDS in Autism, un grupo de apoyo para el autismo que se halla en Indianapolis.
+				</p>
+				<!--
+				<p>	The Autism Resource Page provides families with autistic children with the ability to access their traditional resources in an online format. Cards such as Choice Boards, Stoplight, and First-Then Boards have been digitized, allowing far easier usage in a format oftentimes more comfortable for autistic children. These resources were developed by the TechHOUNDS Robotics Team in partnership with HANDS in Autism, an dinterdisciplinary autism support group based in Indianapolis.
+				</p>
+				-->
+			</div>
+		</div>
         <div class="line content">
             <div class="side-col col-sm-2">
-                 <a class="col-link" onclick="fillArea('stoplight', 'spanish');">Sem&aacute;foro</a>
+				<p class="resources">Recursos</p>
+                <a class="col-link" onclick="fillArea('stoplight', 'spanish');">Sem&aacute;foro</a>
                 <a class="col-link" onclick="fillArea('countdown', 'spanish');">Conteo regresivo</a>
 				<a class="col-link" onclick="fillArea('first-then', 'spanish');">Primero y Despu&eacute;s</a>
 				<a class="col-link" onclick="fillArea('pulley-cards', 'spanish');">Tableros poleas</a>
@@ -46,19 +69,19 @@
             </div>
             <div class="col-sm-10 mid-col">
 				<div class="row" style="margin-bottom: 15px">
-					<div class="col-md-3"></div>
-					<div id="title" class="col-md-6">
+					<div class="col-md-2"></div>
+					<div id="title" class="col-md-4">
 						<h1>&iquest;Qu&eacute; es el autismo?</h1>
 						<!-- Title goes here -->
 					</div>
-					<div id="link" class="col-md-3">
-						<center><!-- Link goes here --></center>
+					<div id="link" class="col-md-6">
+						<!-- Link goes here -->
 					</div>
 				</div>
 				<div class="row">
 					<div id="video">
 						<!-- Video Goes here -->
-						<iframe width="420" height="315" src="https://www.youtube.com/embed/Wxxo4PFXW0Y" frameborder="0" allowfullscreen></iframe>
+						<iframe class="vid" height="470px" width="500" src="https://www.youtube.com/embed/Wxxo4PFXW0Y" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 				<div id="belowVideo" class="row info">
@@ -70,7 +93,6 @@
             </div>
         </div>	
     </div>
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
 </body>
 </html>
