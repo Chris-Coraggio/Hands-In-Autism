@@ -3,9 +3,9 @@ $(document).ready(function() {
 });
 
 function linkToSite(site){
-	if(site == "facebook") window.open();
-	if(site == "pinterest") window.open();
-	if(site == "twitter") window.open();
+	if(site == "facebook") window.open('https://www.facebook.com/HANDSinAutism/');
+	if(site == "pinterest") window.open('https://www.pinterest.com/handsinautism/');
+	if(site == "twitter") window.open('https://twitter.com/handsinautism');
 }
 
 function fillArea(link, language){
