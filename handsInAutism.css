@@ -124,11 +124,14 @@ li{
 }
 #contact{
 	background-color: #1a1aff;
-	color: white;
-	padding: 5px;
 	text-align: center;
 	font: 26px Arial, Helvetica, sans-serif;
 	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 12px;
+}
+#contactus{
+	color: white;
 }
 .rescontent{
 	margin: 15px;
@@ -141,7 +144,7 @@ li{
 .reset{
 	margin: 15px;
 	padding: 20px;
-	background-color: #f2f2f2;
+	background-color: #cce6ff;
 	text-align: center;
 	border-radius: 15px;
 	width: 300px;
