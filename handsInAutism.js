@@ -2,6 +2,12 @@ $(document).ready(function() {
 	fillArea("main", "english");
 });
 
+function linkToSite(site){
+	if(site == "facebook") window.open();
+	if(site == "pinterest") window.open();
+	if(site == "twitter") window.open();
+}
+
 function fillArea(link, language){
 	
 	/* 
