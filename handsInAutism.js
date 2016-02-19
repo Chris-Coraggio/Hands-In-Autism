@@ -461,7 +461,7 @@ function fillArea(link, language){
 						Recuerde de ofrecer una recompensa antes de que alg&uacute;n comportamiento negativo \
 						suceda, asi el individuo no aprender&aacute; a comportarse mal con el fin de tener la recompensa. \
 					</li> \
-				<ol> \
+				</ol> \
 				<h2>Para Hacer:</h2> \
 				<ol type='1'> \
 					<li> \
