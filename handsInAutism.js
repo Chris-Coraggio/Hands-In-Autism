@@ -365,7 +365,10 @@ function fillArea(link, language){
 				que se quitan. \
 				</li> \
 			</ol>");
-			if(link == "countdown") $("#title").html("Conteo regresivo");
+			if(link == "countdown"){
+				$("#title").html("Conteo regresivo");
+				$("#link").html($("<a href='Choices.html'>Ir a recurso</a>");
+			}
 			if(link == "stoplight") $("#title").html("Sem&aacute;foro");
 		}
 		if(link == "choice-boards"){
