@@ -8,6 +8,9 @@
 	font: 32px Arial, Helvetica, sans-serif;
 	text-align: left;
 }
+h3 {
+  color: white;
+}
 
 #subtitle{
 	text-align: left;
