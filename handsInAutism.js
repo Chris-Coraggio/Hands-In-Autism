@@ -1,5 +1,16 @@
 $(document).ready(function() {
 	fillArea("main", "english");
+	var width = $('.mid-col').width() - 20; 
+	var height = Math.round($('.mid-col').width() * 2/3);
+	$('.vid').css('width', width);
+	$('.vid').css('height', height);
+});
+$(window).on('resize', function() {
+	var width = $('.mid-col').width() - 20;
+	var height = Math.round($('.mid-col').width() * 2/3);
+	$('.vid').css('width', width);
+	$('.vid').css('height', height);
+	console.log('Width:' + $(window).width());
 });
 
 function linkToSite(site){
@@ -9,7 +20,6 @@ function linkToSite(site){
 }
 
 function fillArea(link, language){
-	
 	/* 
 	links include:
 		stoplight
@@ -57,7 +67,7 @@ function fillArea(link, language){
 			}
 			$("#link").hide();
 			$("#video").html("\
-			 	<iframe width='630px' height='470px' src='https://www.youtube.com/embed/Wxxo4PFXW0Y' frameborder='0' allowfullscreen> \
+			 	<iframe class='vid' src='https://www.youtube.com/embed/Wxxo4PFXW0Y' frameborder='0'> \
 				</iframe> \
 		 	");
 			$("#belowVideo").hide();
@@ -531,7 +541,7 @@ function fillArea(link, language){
 			$("#title").html("&iquest;Qu&eacute; es el autismo?");
 			$("#link").html("");
 			$("#video").html("\
-			 	<iframe width='420' height='315' src='https://www.youtube.com/embed/Wxxo4PFXW0Y' frameborder='0' allowfullscreen> \
+			 	<iframe class='vid' src='https://www.youtube.com/embed/Wxxo4PFXW0Y' frameborder='0' allowfullscreen> \
 				</iframe> \
 			");
 			$("belowVideo").html("");
@@ -539,7 +549,7 @@ function fillArea(link, language){
 	}
 	if(link == "stoplight"){
 		$("#video").html(" \
-			<video controls> \
+			<video controls class='vid'> \
   				<source class='vid' src='How_to_Video_Stop_Light.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
@@ -550,7 +560,7 @@ function fillArea(link, language){
 	}
 	if(link == "countdown"){
 		$("#video").html(" \
-			<video controls> \
+			<video controls class='vid'> \
   				<source class='vid' src='How_to_Video_Count_Down.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
@@ -561,7 +571,7 @@ function fillArea(link, language){
 	}
 	if(link == "choice-boards"){
 		$("#video").html(" \
-			<video controls> \
+			<video controls class='vid'> \
   				<source class='vid' src='How_to_Video_Choice_Boards.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
@@ -572,7 +582,7 @@ function fillArea(link, language){
 	}
 	if(link == "first-then"){
 		$("#video").html(" \
-			<video controls> \
+			<video controls class='vid'> \
   				<source class='vid' src='How_to_Video_First_Then.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
@@ -583,7 +593,7 @@ function fillArea(link, language){
 	}
 	if(link == "pulley-cards"){
 		$("#video").html(" \
-			<video controls> \
+			<video controls class='vid'> \
   				<source class='vid' src='How_to_Video_Pulley_Card.mp4' type='video/mp4'> \
   				Your browser does not support HTML5 video. \
 			</video> \
@@ -592,4 +602,9 @@ function fillArea(link, language){
 			<a href='How_to_Video_Pulley_Card.mp4' download>Download</a> \
 			");
 	}
+	var width = $('.mid-col').width() - 20;
+	var height = Math.round($('.mid-col').width() * 2/3);
+	$('.vid').css('width', width);
+	$('.vid').css('height', height);
+
 }
